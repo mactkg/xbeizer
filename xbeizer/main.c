@@ -6,16 +6,14 @@
 //  Copyright (c) 2012 Tokyo Tech High School of Science and Technoligy. All rights reserved.
 //
 
-#include <stdio.h>
-#include <math.h>    /* use math lib*/
-#include <X11/Xlib.h>
-#include <X11/Xutil.h>
-#include <X11/cursorfont.h>
-
+#include "xbeizer.h"
 
 #define BORDER 2
 #define WIDTH  500
 #define HIGHT 350
+
+XPoint dividePoints(XPoint p1, XPoint p2, float t);
+short divideValue(short n1, short n2, float t);
 
 int main(int argc, char **argv)
 {
@@ -67,4 +65,28 @@ int main(int argc, char **argv)
                 }
         }
 	}
+}
+
+//*********************************************
+
+XPoint dividePoints(XPoint p1, XPoint p2, float t){
+    XPoint ans;
+    ans.x = divideValue(p1.x, p2.x, t);
+    ans.y = divideValue(p1.y, p2.y, t);
+    return ans;
+}
+
+//*********************************************
+
+short divideValue(short n1, short n2, float t){
+    short n;
+    if (n1 > n2) {
+        n = n1 - n2;
+        return n1 + n * t;
+    } else if(n2 > n1) {
+        n = n2 - n1;
+        return n2 + n * t;
+    } else {
+        return n1;
+    }
 }

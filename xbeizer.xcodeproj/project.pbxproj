@@ -8,26 +8,542 @@
 
 /* Begin PBXBuildFile section */
 		21BD6B7914E4B05900ACC45F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 21BD6B7814E4B05900ACC45F /* main.c */; };
-		21BD6B7B14E4B05900ACC45F /* xbeizer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21BD6B7A14E4B05900ACC45F /* xbeizer.1 */; };
+		21BD846214E4B66400ACC45F /* libAppleWM.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD835A14E4B66400ACC45F /* libAppleWM.7.dylib */; };
+		21BD846314E4B66400ACC45F /* libAppleWM.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD835B14E4B66400ACC45F /* libAppleWM.7.dylib */; };
+		21BD846414E4B66400ACC45F /* libAppleWM.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD835C14E4B66400ACC45F /* libAppleWM.7.dylib */; };
+		21BD846514E4B66400ACC45F /* libcairo.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD835D14E4B66400ACC45F /* libcairo.2.dylib */; };
+		21BD846614E4B66400ACC45F /* libcairo.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD835E14E4B66400ACC45F /* libcairo.2.dylib */; };
+		21BD846714E4B66400ACC45F /* libdmx.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD835F14E4B66400ACC45F /* libdmx.1.dylib */; };
+		21BD846814E4B66400ACC45F /* libdmx.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD836014E4B66400ACC45F /* libdmx.1.dylib */; };
+		21BD846914E4B66400ACC45F /* libdmx.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD836114E4B66400ACC45F /* libdmx.1.dylib */; };
+		21BD846A14E4B66400ACC45F /* libfontconfig.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD836214E4B66400ACC45F /* libfontconfig.1.dylib */; };
+		21BD846B14E4B66400ACC45F /* libfontconfig.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD836314E4B66400ACC45F /* libfontconfig.1.dylib */; };
+		21BD846C14E4B66400ACC45F /* libfontconfig.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD836414E4B66400ACC45F /* libfontconfig.1.dylib */; };
+		21BD846D14E4B66400ACC45F /* libfontenc.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD836514E4B66400ACC45F /* libfontenc.1.dylib */; };
+		21BD846E14E4B66400ACC45F /* libfontenc.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD836614E4B66400ACC45F /* libfontenc.1.dylib */; };
+		21BD846F14E4B66400ACC45F /* libfontenc.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD836714E4B66400ACC45F /* libfontenc.1.dylib */; };
+		21BD847014E4B66400ACC45F /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD836814E4B66400ACC45F /* libfreetype.6.dylib */; };
+		21BD847114E4B66400ACC45F /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD836914E4B66400ACC45F /* libfreetype.6.dylib */; };
+		21BD847214E4B66400ACC45F /* libFS.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD836A14E4B66400ACC45F /* libFS.6.dylib */; };
+		21BD847314E4B66400ACC45F /* libFS.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD836B14E4B66400ACC45F /* libFS.6.dylib */; };
+		21BD847414E4B66400ACC45F /* libFS.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD836C14E4B66400ACC45F /* libFS.6.dylib */; };
+		21BD847514E4B66400ACC45F /* libGL.1.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD836D14E4B66400ACC45F /* libGL.1.2.dylib */; };
+		21BD847614E4B66400ACC45F /* libGL.1.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD836E14E4B66400ACC45F /* libGL.1.2.dylib */; };
+		21BD847714E4B66400ACC45F /* libGL.1.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD836F14E4B66400ACC45F /* libGL.1.2.dylib */; };
+		21BD847814E4B66400ACC45F /* libGLU.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD837014E4B66400ACC45F /* libGLU.1.3.dylib */; };
+		21BD847914E4B66400ACC45F /* libGLU.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD837114E4B66400ACC45F /* libGLU.1.3.dylib */; };
+		21BD847A14E4B66400ACC45F /* libGLU.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD837214E4B66400ACC45F /* libGLU.1.3.dylib */; };
+		21BD847B14E4B66400ACC45F /* libglut.3.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD837314E4B66400ACC45F /* libglut.3.7.dylib */; };
+		21BD847C14E4B66400ACC45F /* libglut.3.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD837414E4B66400ACC45F /* libglut.3.7.dylib */; };
+		21BD847D14E4B66400ACC45F /* libglut.3.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD837514E4B66400ACC45F /* libglut.3.7.dylib */; };
+		21BD847E14E4B66400ACC45F /* libICE.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD837614E4B66400ACC45F /* libICE.6.dylib */; };
+		21BD847F14E4B66400ACC45F /* libICE.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD837714E4B66400ACC45F /* libICE.6.dylib */; };
+		21BD848014E4B66400ACC45F /* libICE.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD837814E4B66400ACC45F /* libICE.6.dylib */; };
+		21BD848114E4B66400ACC45F /* liblbxutil.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD837914E4B66400ACC45F /* liblbxutil.1.dylib */; };
+		21BD848214E4B66400ACC45F /* liblbxutil.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD837A14E4B66400ACC45F /* liblbxutil.1.dylib */; };
+		21BD848314E4B66400ACC45F /* liblbxutil.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD837B14E4B66400ACC45F /* liblbxutil.1.dylib */; };
+		21BD848414E4B66400ACC45F /* liboldX.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD837C14E4B66400ACC45F /* liboldX.6.dylib */; };
+		21BD848514E4B66400ACC45F /* liboldX.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD837D14E4B66400ACC45F /* liboldX.6.dylib */; };
+		21BD848614E4B66400ACC45F /* liboldX.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD837E14E4B66400ACC45F /* liboldX.6.dylib */; };
+		21BD848714E4B66400ACC45F /* libOSMesa.7.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD837F14E4B66400ACC45F /* libOSMesa.7.2.dylib */; };
+		21BD848814E4B66400ACC45F /* libOSMesa.7.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD838014E4B66400ACC45F /* libOSMesa.7.2.dylib */; };
+		21BD848914E4B66400ACC45F /* libOSMesa.7.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD838114E4B66400ACC45F /* libOSMesa.7.2.dylib */; };
+		21BD848A14E4B66400ACC45F /* libpixman-1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD838214E4B66400ACC45F /* libpixman-1.0.dylib */; };
+		21BD848B14E4B66400ACC45F /* libpixman-1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD838314E4B66400ACC45F /* libpixman-1.0.dylib */; };
+		21BD848C14E4B66400ACC45F /* libpixman-1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD838414E4B66400ACC45F /* libpixman-1.0.dylib */; };
+		21BD848D14E4B66400ACC45F /* libpng.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD838514E4B66400ACC45F /* libpng.3.dylib */; };
+		21BD848E14E4B66400ACC45F /* libpng.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD838614E4B66400ACC45F /* libpng.3.dylib */; };
+		21BD848F14E4B66400ACC45F /* libpng.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD838714E4B66400ACC45F /* libpng.3.dylib */; };
+		21BD849014E4B66400ACC45F /* libpng.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD838814E4B66400ACC45F /* libpng.3.dylib */; };
+		21BD849114E4B66400ACC45F /* libpng12.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD838914E4B66400ACC45F /* libpng12.0.dylib */; };
+		21BD849214E4B66400ACC45F /* libpng12.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD838A14E4B66400ACC45F /* libpng12.0.dylib */; };
+		21BD849314E4B66400ACC45F /* libpng12.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD838B14E4B66400ACC45F /* libpng12.0.dylib */; };
+		21BD849414E4B66400ACC45F /* libpng12.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD838C14E4B66400ACC45F /* libpng12.0.dylib */; };
+		21BD849514E4B66400ACC45F /* libpng12.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD838D14E4B66400ACC45F /* libpng12.0.dylib */; };
+		21BD849614E4B66400ACC45F /* libpng12.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD838E14E4B66400ACC45F /* libpng12.0.dylib */; };
+		21BD849714E4B66400ACC45F /* libSM.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD838F14E4B66400ACC45F /* libSM.6.dylib */; };
+		21BD849814E4B66400ACC45F /* libSM.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD839014E4B66400ACC45F /* libSM.6.dylib */; };
+		21BD849914E4B66400ACC45F /* libSM.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD839114E4B66400ACC45F /* libSM.6.dylib */; };
+		21BD849A14E4B66400ACC45F /* libX11.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD839214E4B66400ACC45F /* libX11.6.dylib */; };
+		21BD849B14E4B66400ACC45F /* libX11.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD839314E4B66400ACC45F /* libX11.6.dylib */; };
+		21BD849C14E4B66400ACC45F /* libX11.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD839414E4B66400ACC45F /* libX11.6.dylib */; };
+		21BD849D14E4B66400ACC45F /* libXau.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD839514E4B66400ACC45F /* libXau.6.dylib */; };
+		21BD849E14E4B66400ACC45F /* libXau.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD839614E4B66400ACC45F /* libXau.6.dylib */; };
+		21BD849F14E4B66400ACC45F /* libXau.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD839714E4B66400ACC45F /* libXau.6.dylib */; };
+		21BD84A014E4B66400ACC45F /* libXaw6.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD839814E4B66400ACC45F /* libXaw6.6.dylib */; };
+		21BD84A114E4B66400ACC45F /* libXaw7.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD839914E4B66400ACC45F /* libXaw7.7.dylib */; };
+		21BD84A214E4B66400ACC45F /* libXaw8.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD839A14E4B66400ACC45F /* libXaw8.8.dylib */; };
+		21BD84A314E4B66400ACC45F /* libXaw7.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD839B14E4B66400ACC45F /* libXaw7.7.dylib */; };
+		21BD84A414E4B66400ACC45F /* libXaw6.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD839C14E4B66400ACC45F /* libXaw6.6.dylib */; };
+		21BD84A514E4B66400ACC45F /* libXaw6.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD839D14E4B66400ACC45F /* libXaw6.6.dylib */; };
+		21BD84A614E4B66400ACC45F /* libXaw6.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD839E14E4B66400ACC45F /* libXaw6.6.dylib */; };
+		21BD84A714E4B66400ACC45F /* libXaw7.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD839F14E4B66400ACC45F /* libXaw7.7.dylib */; };
+		21BD84A814E4B66400ACC45F /* libXaw7.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83A014E4B66400ACC45F /* libXaw7.7.dylib */; };
+		21BD84A914E4B66400ACC45F /* libXaw7.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83A114E4B66400ACC45F /* libXaw7.7.dylib */; };
+		21BD84AA14E4B66400ACC45F /* libXaw8.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83A214E4B66400ACC45F /* libXaw8.8.dylib */; };
+		21BD84AB14E4B66400ACC45F /* libXaw8.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83A314E4B66400ACC45F /* libXaw8.8.dylib */; };
+		21BD84AC14E4B66400ACC45F /* libXaw8.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83A414E4B66400ACC45F /* libXaw8.8.dylib */; };
+		21BD84AD14E4B66400ACC45F /* libxcb-atom.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83A514E4B66400ACC45F /* libxcb-atom.1.dylib */; };
+		21BD84AE14E4B66400ACC45F /* libxcb-atom.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83A614E4B66400ACC45F /* libxcb-atom.1.dylib */; };
+		21BD84AF14E4B66400ACC45F /* libxcb-atom.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83A714E4B66400ACC45F /* libxcb-atom.1.dylib */; };
+		21BD84B014E4B66400ACC45F /* libxcb-aux.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83A814E4B66400ACC45F /* libxcb-aux.0.dylib */; };
+		21BD84B114E4B66400ACC45F /* libxcb-aux.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83A914E4B66400ACC45F /* libxcb-aux.0.dylib */; };
+		21BD84B214E4B66400ACC45F /* libxcb-aux.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83AA14E4B66400ACC45F /* libxcb-aux.0.dylib */; };
+		21BD84B314E4B66400ACC45F /* libxcb-composite.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83AB14E4B66400ACC45F /* libxcb-composite.0.dylib */; };
+		21BD84B414E4B66400ACC45F /* libxcb-composite.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83AC14E4B66400ACC45F /* libxcb-composite.0.dylib */; };
+		21BD84B514E4B66400ACC45F /* libxcb-composite.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83AD14E4B66400ACC45F /* libxcb-composite.0.dylib */; };
+		21BD84B614E4B66400ACC45F /* libxcb-damage.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83AE14E4B66400ACC45F /* libxcb-damage.0.dylib */; };
+		21BD84B714E4B66400ACC45F /* libxcb-damage.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83AF14E4B66400ACC45F /* libxcb-damage.0.dylib */; };
+		21BD84B814E4B66400ACC45F /* libxcb-damage.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83B014E4B66400ACC45F /* libxcb-damage.0.dylib */; };
+		21BD84B914E4B66400ACC45F /* libxcb-dpms.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83B114E4B66400ACC45F /* libxcb-dpms.0.dylib */; };
+		21BD84BA14E4B66400ACC45F /* libxcb-dpms.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83B214E4B66400ACC45F /* libxcb-dpms.0.dylib */; };
+		21BD84BB14E4B66400ACC45F /* libxcb-dpms.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83B314E4B66400ACC45F /* libxcb-dpms.0.dylib */; };
+		21BD84BC14E4B66400ACC45F /* libxcb-event.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83B414E4B66400ACC45F /* libxcb-event.1.dylib */; };
+		21BD84BD14E4B66400ACC45F /* libxcb-event.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83B514E4B66400ACC45F /* libxcb-event.1.dylib */; };
+		21BD84BE14E4B66400ACC45F /* libxcb-event.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83B614E4B66400ACC45F /* libxcb-event.1.dylib */; };
+		21BD84BF14E4B66400ACC45F /* libxcb-glx.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83B714E4B66400ACC45F /* libxcb-glx.0.dylib */; };
+		21BD84C014E4B66400ACC45F /* libxcb-glx.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83B814E4B66400ACC45F /* libxcb-glx.0.dylib */; };
+		21BD84C114E4B66400ACC45F /* libxcb-glx.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83B914E4B66400ACC45F /* libxcb-glx.0.dylib */; };
+		21BD84C214E4B66400ACC45F /* libxcb-icccm.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83BA14E4B66400ACC45F /* libxcb-icccm.1.dylib */; };
+		21BD84C314E4B66400ACC45F /* libxcb-icccm.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83BB14E4B66400ACC45F /* libxcb-icccm.1.dylib */; };
+		21BD84C414E4B66400ACC45F /* libxcb-icccm.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83BC14E4B66400ACC45F /* libxcb-icccm.1.dylib */; };
+		21BD84C514E4B66400ACC45F /* libxcb-image.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83BD14E4B66400ACC45F /* libxcb-image.0.dylib */; };
+		21BD84C614E4B66400ACC45F /* libxcb-image.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83BE14E4B66400ACC45F /* libxcb-image.0.dylib */; };
+		21BD84C714E4B66400ACC45F /* libxcb-image.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83BF14E4B66400ACC45F /* libxcb-image.0.dylib */; };
+		21BD84C814E4B66400ACC45F /* libxcb-keysyms.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83C014E4B66400ACC45F /* libxcb-keysyms.0.dylib */; };
+		21BD84C914E4B66400ACC45F /* libxcb-keysyms.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83C114E4B66400ACC45F /* libxcb-keysyms.0.dylib */; };
+		21BD84CA14E4B66400ACC45F /* libxcb-keysyms.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83C214E4B66400ACC45F /* libxcb-keysyms.0.dylib */; };
+		21BD84CB14E4B66400ACC45F /* libxcb-property.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83C314E4B66400ACC45F /* libxcb-property.1.dylib */; };
+		21BD84CC14E4B66400ACC45F /* libxcb-property.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83C414E4B66400ACC45F /* libxcb-property.1.dylib */; };
+		21BD84CD14E4B66400ACC45F /* libxcb-property.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83C514E4B66400ACC45F /* libxcb-property.1.dylib */; };
+		21BD84CE14E4B66400ACC45F /* libxcb-randr.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83C614E4B66400ACC45F /* libxcb-randr.0.dylib */; };
+		21BD84CF14E4B66400ACC45F /* libxcb-randr.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83C714E4B66400ACC45F /* libxcb-randr.0.dylib */; };
+		21BD84D014E4B66400ACC45F /* libxcb-randr.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83C814E4B66400ACC45F /* libxcb-randr.0.dylib */; };
+		21BD84D114E4B66400ACC45F /* libxcb-record.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83C914E4B66400ACC45F /* libxcb-record.0.dylib */; };
+		21BD84D214E4B66400ACC45F /* libxcb-record.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83CA14E4B66400ACC45F /* libxcb-record.0.dylib */; };
+		21BD84D314E4B66400ACC45F /* libxcb-record.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83CB14E4B66400ACC45F /* libxcb-record.0.dylib */; };
+		21BD84D414E4B66400ACC45F /* libxcb-render-util.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83CC14E4B66400ACC45F /* libxcb-render-util.0.dylib */; };
+		21BD84D514E4B66400ACC45F /* libxcb-render-util.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83CD14E4B66400ACC45F /* libxcb-render-util.0.dylib */; };
+		21BD84D614E4B66400ACC45F /* libxcb-render-util.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83CE14E4B66400ACC45F /* libxcb-render-util.0.dylib */; };
+		21BD84D714E4B66400ACC45F /* libxcb-render.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83CF14E4B66400ACC45F /* libxcb-render.0.dylib */; };
+		21BD84D814E4B66400ACC45F /* libxcb-render.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83D014E4B66400ACC45F /* libxcb-render.0.dylib */; };
+		21BD84D914E4B66400ACC45F /* libxcb-render.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83D114E4B66400ACC45F /* libxcb-render.0.dylib */; };
+		21BD84DA14E4B66400ACC45F /* libxcb-reply.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83D214E4B66400ACC45F /* libxcb-reply.1.dylib */; };
+		21BD84DB14E4B66400ACC45F /* libxcb-reply.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83D314E4B66400ACC45F /* libxcb-reply.1.dylib */; };
+		21BD84DC14E4B66400ACC45F /* libxcb-reply.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83D414E4B66400ACC45F /* libxcb-reply.1.dylib */; };
+		21BD84DD14E4B66400ACC45F /* libxcb-res.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83D514E4B66400ACC45F /* libxcb-res.0.dylib */; };
+		21BD84DE14E4B66400ACC45F /* libxcb-res.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83D614E4B66400ACC45F /* libxcb-res.0.dylib */; };
+		21BD84DF14E4B66400ACC45F /* libxcb-res.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83D714E4B66400ACC45F /* libxcb-res.0.dylib */; };
+		21BD84E014E4B66400ACC45F /* libxcb-screensaver.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83D814E4B66400ACC45F /* libxcb-screensaver.0.dylib */; };
+		21BD84E114E4B66400ACC45F /* libxcb-screensaver.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83D914E4B66400ACC45F /* libxcb-screensaver.0.dylib */; };
+		21BD84E214E4B66400ACC45F /* libxcb-screensaver.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83DA14E4B66400ACC45F /* libxcb-screensaver.0.dylib */; };
+		21BD84E314E4B66400ACC45F /* libxcb-shape.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83DB14E4B66400ACC45F /* libxcb-shape.0.dylib */; };
+		21BD84E414E4B66400ACC45F /* libxcb-shape.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83DC14E4B66400ACC45F /* libxcb-shape.0.dylib */; };
+		21BD84E514E4B66400ACC45F /* libxcb-shape.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83DD14E4B66400ACC45F /* libxcb-shape.0.dylib */; };
+		21BD84E614E4B66400ACC45F /* libxcb-shm.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83DE14E4B66400ACC45F /* libxcb-shm.0.dylib */; };
+		21BD84E714E4B66400ACC45F /* libxcb-shm.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83DF14E4B66400ACC45F /* libxcb-shm.0.dylib */; };
+		21BD84E814E4B66400ACC45F /* libxcb-shm.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83E014E4B66400ACC45F /* libxcb-shm.0.dylib */; };
+		21BD84E914E4B66400ACC45F /* libxcb-sync.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83E114E4B66400ACC45F /* libxcb-sync.0.dylib */; };
+		21BD84EA14E4B66400ACC45F /* libxcb-sync.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83E214E4B66400ACC45F /* libxcb-sync.0.dylib */; };
+		21BD84EB14E4B66400ACC45F /* libxcb-sync.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83E314E4B66400ACC45F /* libxcb-sync.0.dylib */; };
+		21BD84EC14E4B66400ACC45F /* libxcb-wm.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83E414E4B66400ACC45F /* libxcb-wm.0.dylib */; };
+		21BD84ED14E4B66400ACC45F /* libxcb-wm.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83E514E4B66400ACC45F /* libxcb-wm.0.dylib */; };
+		21BD84EE14E4B66400ACC45F /* libxcb-wm.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83E614E4B66400ACC45F /* libxcb-wm.0.dylib */; };
+		21BD84EF14E4B66400ACC45F /* libxcb-xevie.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83E714E4B66400ACC45F /* libxcb-xevie.0.dylib */; };
+		21BD84F014E4B66400ACC45F /* libxcb-xevie.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83E814E4B66400ACC45F /* libxcb-xevie.0.dylib */; };
+		21BD84F114E4B66400ACC45F /* libxcb-xevie.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83E914E4B66400ACC45F /* libxcb-xevie.0.dylib */; };
+		21BD84F214E4B66400ACC45F /* libxcb-xf86dri.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83EA14E4B66400ACC45F /* libxcb-xf86dri.0.dylib */; };
+		21BD84F314E4B66400ACC45F /* libxcb-xf86dri.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83EB14E4B66400ACC45F /* libxcb-xf86dri.0.dylib */; };
+		21BD84F414E4B66400ACC45F /* libxcb-xf86dri.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83EC14E4B66400ACC45F /* libxcb-xf86dri.0.dylib */; };
+		21BD84F514E4B66400ACC45F /* libxcb-xfixes.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83ED14E4B66400ACC45F /* libxcb-xfixes.0.dylib */; };
+		21BD84F614E4B66400ACC45F /* libxcb-xfixes.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83EE14E4B66400ACC45F /* libxcb-xfixes.0.dylib */; };
+		21BD84F714E4B66400ACC45F /* libxcb-xfixes.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83EF14E4B66400ACC45F /* libxcb-xfixes.0.dylib */; };
+		21BD84F814E4B66400ACC45F /* libxcb-xinerama.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83F014E4B66400ACC45F /* libxcb-xinerama.0.dylib */; };
+		21BD84F914E4B66400ACC45F /* libxcb-xinerama.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83F114E4B66400ACC45F /* libxcb-xinerama.0.dylib */; };
+		21BD84FA14E4B66400ACC45F /* libxcb-xinerama.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83F214E4B66400ACC45F /* libxcb-xinerama.0.dylib */; };
+		21BD84FB14E4B66400ACC45F /* libxcb-xprint.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83F314E4B66400ACC45F /* libxcb-xprint.0.dylib */; };
+		21BD84FC14E4B66400ACC45F /* libxcb-xprint.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83F414E4B66400ACC45F /* libxcb-xprint.0.dylib */; };
+		21BD84FD14E4B66400ACC45F /* libxcb-xprint.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83F514E4B66400ACC45F /* libxcb-xprint.0.dylib */; };
+		21BD84FE14E4B66400ACC45F /* libxcb-xtest.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83F614E4B66400ACC45F /* libxcb-xtest.0.dylib */; };
+		21BD84FF14E4B66400ACC45F /* libxcb-xtest.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83F714E4B66400ACC45F /* libxcb-xtest.0.dylib */; };
+		21BD850014E4B66400ACC45F /* libxcb-xtest.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83F814E4B66400ACC45F /* libxcb-xtest.0.dylib */; };
+		21BD850114E4B66400ACC45F /* libxcb-xv.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83F914E4B66400ACC45F /* libxcb-xv.0.dylib */; };
+		21BD850214E4B66400ACC45F /* libxcb-xv.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83FA14E4B66400ACC45F /* libxcb-xv.0.dylib */; };
+		21BD850314E4B66400ACC45F /* libxcb-xv.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83FB14E4B66400ACC45F /* libxcb-xv.0.dylib */; };
+		21BD850414E4B66400ACC45F /* libxcb-xvmc.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83FC14E4B66400ACC45F /* libxcb-xvmc.0.dylib */; };
+		21BD850514E4B66400ACC45F /* libxcb-xvmc.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83FD14E4B66400ACC45F /* libxcb-xvmc.0.dylib */; };
+		21BD850614E4B66400ACC45F /* libxcb-xvmc.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83FE14E4B66400ACC45F /* libxcb-xvmc.0.dylib */; };
+		21BD850714E4B66400ACC45F /* libxcb.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD83FF14E4B66400ACC45F /* libxcb.1.dylib */; };
+		21BD850814E4B66400ACC45F /* libxcb.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD840014E4B66400ACC45F /* libxcb.1.dylib */; };
+		21BD850914E4B66400ACC45F /* libxcb.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD840114E4B66400ACC45F /* libxcb.1.dylib */; };
+		21BD850A14E4B66400ACC45F /* libXcomposite.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD840214E4B66400ACC45F /* libXcomposite.1.dylib */; };
+		21BD850B14E4B66400ACC45F /* libXcomposite.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD840314E4B66400ACC45F /* libXcomposite.1.dylib */; };
+		21BD850C14E4B66400ACC45F /* libXcomposite.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD840414E4B66400ACC45F /* libXcomposite.1.dylib */; };
+		21BD850D14E4B66400ACC45F /* libXcursor.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD840514E4B66400ACC45F /* libXcursor.1.dylib */; };
+		21BD850E14E4B66400ACC45F /* libXcursor.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD840614E4B66400ACC45F /* libXcursor.1.dylib */; };
+		21BD850F14E4B66400ACC45F /* libXcursor.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD840714E4B66400ACC45F /* libXcursor.1.dylib */; };
+		21BD851014E4B66400ACC45F /* libXdamage.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD840814E4B66400ACC45F /* libXdamage.1.dylib */; };
+		21BD851114E4B66400ACC45F /* libXdamage.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD840914E4B66400ACC45F /* libXdamage.1.dylib */; };
+		21BD851214E4B66400ACC45F /* libXdamage.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD840A14E4B66400ACC45F /* libXdamage.1.dylib */; };
+		21BD851314E4B66400ACC45F /* libXdmcp.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD840B14E4B66400ACC45F /* libXdmcp.6.dylib */; };
+		21BD851414E4B66400ACC45F /* libXdmcp.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD840C14E4B66400ACC45F /* libXdmcp.6.dylib */; };
+		21BD851514E4B66400ACC45F /* libXdmcp.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD840D14E4B66400ACC45F /* libXdmcp.6.dylib */; };
+		21BD851614E4B66400ACC45F /* libXevie.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD840E14E4B66400ACC45F /* libXevie.1.dylib */; };
+		21BD851714E4B66400ACC45F /* libXevie.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD840F14E4B66400ACC45F /* libXevie.1.dylib */; };
+		21BD851814E4B66400ACC45F /* libXevie.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD841014E4B66400ACC45F /* libXevie.1.dylib */; };
+		21BD851914E4B66400ACC45F /* libXext.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD841114E4B66400ACC45F /* libXext.6.dylib */; };
+		21BD851A14E4B66500ACC45F /* libXext.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD841214E4B66400ACC45F /* libXext.6.dylib */; };
+		21BD851B14E4B66500ACC45F /* libXext.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD841314E4B66400ACC45F /* libXext.6.dylib */; };
+		21BD851C14E4B66500ACC45F /* libXfixes.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD841414E4B66400ACC45F /* libXfixes.3.dylib */; };
+		21BD851D14E4B66500ACC45F /* libXfixes.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD841514E4B66400ACC45F /* libXfixes.3.dylib */; };
+		21BD851E14E4B66500ACC45F /* libXfixes.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD841614E4B66400ACC45F /* libXfixes.3.dylib */; };
+		21BD851F14E4B66500ACC45F /* libXfont.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD841714E4B66400ACC45F /* libXfont.1.dylib */; };
+		21BD852014E4B66500ACC45F /* libXfont.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD841814E4B66400ACC45F /* libXfont.1.dylib */; };
+		21BD852114E4B66500ACC45F /* libXfont.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD841914E4B66400ACC45F /* libXfont.1.dylib */; };
+		21BD852214E4B66500ACC45F /* libXfontcache.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD841A14E4B66400ACC45F /* libXfontcache.1.dylib */; };
+		21BD852314E4B66500ACC45F /* libXfontcache.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD841B14E4B66400ACC45F /* libXfontcache.1.dylib */; };
+		21BD852414E4B66500ACC45F /* libXfontcache.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD841C14E4B66400ACC45F /* libXfontcache.1.dylib */; };
+		21BD852514E4B66500ACC45F /* libXft.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD841D14E4B66400ACC45F /* libXft.2.dylib */; };
+		21BD852614E4B66500ACC45F /* libXft.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD841E14E4B66400ACC45F /* libXft.2.dylib */; };
+		21BD852714E4B66500ACC45F /* libXft.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD841F14E4B66400ACC45F /* libXft.2.dylib */; };
+		21BD852814E4B66500ACC45F /* libXi.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD842014E4B66400ACC45F /* libXi.6.dylib */; };
+		21BD852914E4B66500ACC45F /* libXi.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD842114E4B66400ACC45F /* libXi.6.dylib */; };
+		21BD852A14E4B66500ACC45F /* libXi.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD842214E4B66400ACC45F /* libXi.6.dylib */; };
+		21BD852B14E4B66500ACC45F /* libXinerama.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD842314E4B66400ACC45F /* libXinerama.1.dylib */; };
+		21BD852C14E4B66500ACC45F /* libXinerama.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD842414E4B66400ACC45F /* libXinerama.1.dylib */; };
+		21BD852D14E4B66500ACC45F /* libXinerama.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD842514E4B66400ACC45F /* libXinerama.1.dylib */; };
+		21BD852E14E4B66500ACC45F /* libxkbfile.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD842614E4B66400ACC45F /* libxkbfile.1.dylib */; };
+		21BD852F14E4B66500ACC45F /* libxkbfile.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD842714E4B66400ACC45F /* libxkbfile.1.dylib */; };
+		21BD853014E4B66500ACC45F /* libxkbfile.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD842814E4B66400ACC45F /* libxkbfile.1.dylib */; };
+		21BD853114E4B66500ACC45F /* libxkbui.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD842914E4B66400ACC45F /* libxkbui.1.dylib */; };
+		21BD853214E4B66500ACC45F /* libxkbui.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD842A14E4B66400ACC45F /* libxkbui.1.dylib */; };
+		21BD853314E4B66500ACC45F /* libxkbui.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD842B14E4B66400ACC45F /* libxkbui.1.dylib */; };
+		21BD853414E4B66500ACC45F /* libXmu.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD842C14E4B66400ACC45F /* libXmu.6.dylib */; };
+		21BD853514E4B66500ACC45F /* libXmu.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD842D14E4B66400ACC45F /* libXmu.6.dylib */; };
+		21BD853614E4B66500ACC45F /* libXmu.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD842E14E4B66400ACC45F /* libXmu.6.dylib */; };
+		21BD853714E4B66500ACC45F /* libXmuu.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD842F14E4B66400ACC45F /* libXmuu.1.dylib */; };
+		21BD853814E4B66500ACC45F /* libXmuu.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD843014E4B66400ACC45F /* libXmuu.1.dylib */; };
+		21BD853914E4B66500ACC45F /* libXmuu.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD843114E4B66400ACC45F /* libXmuu.1.dylib */; };
+		21BD853A14E4B66500ACC45F /* libXp.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD843214E4B66400ACC45F /* libXp.6.dylib */; };
+		21BD853B14E4B66500ACC45F /* libXp.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD843314E4B66400ACC45F /* libXp.6.dylib */; };
+		21BD853C14E4B66500ACC45F /* libXp.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD843414E4B66400ACC45F /* libXp.6.dylib */; };
+		21BD853D14E4B66500ACC45F /* libXpm.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD843514E4B66400ACC45F /* libXpm.4.dylib */; };
+		21BD853E14E4B66500ACC45F /* libXpm.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD843614E4B66400ACC45F /* libXpm.4.dylib */; };
+		21BD853F14E4B66500ACC45F /* libXpm.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD843714E4B66400ACC45F /* libXpm.4.dylib */; };
+		21BD854014E4B66500ACC45F /* libXprintAppUtil.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD843814E4B66400ACC45F /* libXprintAppUtil.1.dylib */; };
+		21BD854114E4B66500ACC45F /* libXprintAppUtil.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD843914E4B66400ACC45F /* libXprintAppUtil.1.dylib */; };
+		21BD854214E4B66500ACC45F /* libXprintAppUtil.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD843A14E4B66400ACC45F /* libXprintAppUtil.1.dylib */; };
+		21BD854314E4B66500ACC45F /* libXprintUtil.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD843B14E4B66400ACC45F /* libXprintUtil.1.dylib */; };
+		21BD854414E4B66500ACC45F /* libXprintUtil.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD843C14E4B66400ACC45F /* libXprintUtil.1.dylib */; };
+		21BD854514E4B66500ACC45F /* libXprintUtil.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD843D14E4B66400ACC45F /* libXprintUtil.1.dylib */; };
+		21BD854614E4B66500ACC45F /* libXrandr.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD843E14E4B66400ACC45F /* libXrandr.2.dylib */; };
+		21BD854714E4B66500ACC45F /* libXrandr.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD843F14E4B66400ACC45F /* libXrandr.2.dylib */; };
+		21BD854814E4B66500ACC45F /* libXrandr.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD844014E4B66400ACC45F /* libXrandr.2.dylib */; };
+		21BD854914E4B66500ACC45F /* libXrender.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD844114E4B66400ACC45F /* libXrender.1.dylib */; };
+		21BD854A14E4B66500ACC45F /* libXrender.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD844214E4B66400ACC45F /* libXrender.1.dylib */; };
+		21BD854B14E4B66500ACC45F /* libXrender.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD844314E4B66400ACC45F /* libXrender.1.dylib */; };
+		21BD854C14E4B66500ACC45F /* libXRes.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD844414E4B66400ACC45F /* libXRes.1.dylib */; };
+		21BD854D14E4B66500ACC45F /* libXRes.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD844514E4B66400ACC45F /* libXRes.1.dylib */; };
+		21BD854E14E4B66500ACC45F /* libXRes.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD844614E4B66400ACC45F /* libXRes.1.dylib */; };
+		21BD854F14E4B66500ACC45F /* libXss.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD844714E4B66400ACC45F /* libXss.1.dylib */; };
+		21BD855014E4B66500ACC45F /* libXss.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD844814E4B66400ACC45F /* libXss.1.dylib */; };
+		21BD855114E4B66500ACC45F /* libXss.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD844914E4B66400ACC45F /* libXss.1.dylib */; };
+		21BD855214E4B66500ACC45F /* libXt.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD844A14E4B66400ACC45F /* libXt.6.dylib */; };
+		21BD855314E4B66500ACC45F /* libXt.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD844B14E4B66400ACC45F /* libXt.6.dylib */; };
+		21BD855414E4B66500ACC45F /* libXt.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD844C14E4B66400ACC45F /* libXt.6.dylib */; };
+		21BD855514E4B66500ACC45F /* libXTrap.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD844D14E4B66400ACC45F /* libXTrap.6.dylib */; };
+		21BD855614E4B66500ACC45F /* libXTrap.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD844E14E4B66400ACC45F /* libXTrap.6.dylib */; };
+		21BD855714E4B66500ACC45F /* libXTrap.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD844F14E4B66400ACC45F /* libXTrap.6.dylib */; };
+		21BD855814E4B66500ACC45F /* libXtst.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD845014E4B66400ACC45F /* libXtst.6.dylib */; };
+		21BD855914E4B66500ACC45F /* libXtst.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD845114E4B66400ACC45F /* libXtst.6.dylib */; };
+		21BD855A14E4B66500ACC45F /* libXtst.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD845214E4B66400ACC45F /* libXtst.6.dylib */; };
+		21BD855B14E4B66500ACC45F /* libXv.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD845314E4B66400ACC45F /* libXv.1.dylib */; };
+		21BD855C14E4B66500ACC45F /* libXv.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD845414E4B66400ACC45F /* libXv.1.dylib */; };
+		21BD855D14E4B66500ACC45F /* libXv.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD845514E4B66400ACC45F /* libXv.1.dylib */; };
+		21BD855E14E4B66500ACC45F /* libXvMC.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD845614E4B66400ACC45F /* libXvMC.1.dylib */; };
+		21BD855F14E4B66500ACC45F /* libXvMC.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD845714E4B66400ACC45F /* libXvMC.1.dylib */; };
+		21BD856014E4B66500ACC45F /* libXvMC.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD845814E4B66400ACC45F /* libXvMC.1.dylib */; };
+		21BD856114E4B66500ACC45F /* libXvMCW.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD845914E4B66400ACC45F /* libXvMCW.1.dylib */; };
+		21BD856214E4B66500ACC45F /* libXvMCW.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD845A14E4B66400ACC45F /* libXvMCW.1.dylib */; };
+		21BD856314E4B66500ACC45F /* libXvMCW.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD845B14E4B66400ACC45F /* libXvMCW.1.dylib */; };
+		21BD856414E4B66500ACC45F /* libXxf86misc.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD845C14E4B66400ACC45F /* libXxf86misc.1.dylib */; };
+		21BD856514E4B66500ACC45F /* libXxf86misc.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD845D14E4B66400ACC45F /* libXxf86misc.1.dylib */; };
+		21BD856614E4B66500ACC45F /* libXxf86misc.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD845E14E4B66400ACC45F /* libXxf86misc.1.dylib */; };
+		21BD856714E4B66500ACC45F /* libXxf86vm.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD845F14E4B66400ACC45F /* libXxf86vm.1.dylib */; };
+		21BD856814E4B66500ACC45F /* libXxf86vm.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD846014E4B66400ACC45F /* libXxf86vm.1.dylib */; };
+		21BD856914E4B66500ACC45F /* libXxf86vm.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BD846114E4B66400ACC45F /* libXxf86vm.1.dylib */; };
+		21BD856D14E4BD2700ACC45F /* xbeizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 21BD856C14E4BD2700ACC45F /* xbeizer.h */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		21BD6B7214E4B05900ACC45F /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-				21BD6B7B14E4B05900ACC45F /* xbeizer.1 in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		21BD6B7414E4B05900ACC45F /* xbeizer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xbeizer; sourceTree = BUILT_PRODUCTS_DIR; };
 		21BD6B7814E4B05900ACC45F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		21BD6B7A14E4B05900ACC45F /* xbeizer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = xbeizer.1; sourceTree = "<group>"; };
+		21BD835A14E4B66400ACC45F /* libAppleWM.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAppleWM.7.dylib; path = /usr/X11/lib/libAppleWM.7.dylib; sourceTree = "<absolute>"; };
+		21BD835B14E4B66400ACC45F /* libAppleWM.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAppleWM.7.dylib; path = /usr/X11/lib/libAppleWM.7.dylib; sourceTree = "<absolute>"; };
+		21BD835C14E4B66400ACC45F /* libAppleWM.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAppleWM.7.dylib; path = /usr/X11/lib/libAppleWM.7.dylib; sourceTree = "<absolute>"; };
+		21BD835D14E4B66400ACC45F /* libcairo.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcairo.2.dylib; path = /usr/X11/lib/libcairo.2.dylib; sourceTree = "<absolute>"; };
+		21BD835E14E4B66400ACC45F /* libcairo.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcairo.2.dylib; path = /usr/X11/lib/libcairo.2.dylib; sourceTree = "<absolute>"; };
+		21BD835F14E4B66400ACC45F /* libdmx.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdmx.1.dylib; path = /usr/X11/lib/libdmx.1.dylib; sourceTree = "<absolute>"; };
+		21BD836014E4B66400ACC45F /* libdmx.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdmx.1.dylib; path = /usr/X11/lib/libdmx.1.dylib; sourceTree = "<absolute>"; };
+		21BD836114E4B66400ACC45F /* libdmx.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdmx.1.dylib; path = /usr/X11/lib/libdmx.1.dylib; sourceTree = "<absolute>"; };
+		21BD836214E4B66400ACC45F /* libfontconfig.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfontconfig.1.dylib; path = /usr/X11/lib/libfontconfig.1.dylib; sourceTree = "<absolute>"; };
+		21BD836314E4B66400ACC45F /* libfontconfig.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfontconfig.1.dylib; path = /usr/X11/lib/libfontconfig.1.dylib; sourceTree = "<absolute>"; };
+		21BD836414E4B66400ACC45F /* libfontconfig.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfontconfig.1.dylib; path = /usr/X11/lib/libfontconfig.1.dylib; sourceTree = "<absolute>"; };
+		21BD836514E4B66400ACC45F /* libfontenc.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfontenc.1.dylib; path = /usr/X11/lib/libfontenc.1.dylib; sourceTree = "<absolute>"; };
+		21BD836614E4B66400ACC45F /* libfontenc.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfontenc.1.dylib; path = /usr/X11/lib/libfontenc.1.dylib; sourceTree = "<absolute>"; };
+		21BD836714E4B66400ACC45F /* libfontenc.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfontenc.1.dylib; path = /usr/X11/lib/libfontenc.1.dylib; sourceTree = "<absolute>"; };
+		21BD836814E4B66400ACC45F /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreetype.6.dylib; path = /usr/X11/lib/libfreetype.6.dylib; sourceTree = "<absolute>"; };
+		21BD836914E4B66400ACC45F /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreetype.6.dylib; path = /usr/X11/lib/libfreetype.6.dylib; sourceTree = "<absolute>"; };
+		21BD836A14E4B66400ACC45F /* libFS.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libFS.6.dylib; path = /usr/X11/lib/libFS.6.dylib; sourceTree = "<absolute>"; };
+		21BD836B14E4B66400ACC45F /* libFS.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libFS.6.dylib; path = /usr/X11/lib/libFS.6.dylib; sourceTree = "<absolute>"; };
+		21BD836C14E4B66400ACC45F /* libFS.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libFS.6.dylib; path = /usr/X11/lib/libFS.6.dylib; sourceTree = "<absolute>"; };
+		21BD836D14E4B66400ACC45F /* libGL.1.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGL.1.2.dylib; path = /usr/X11/lib/libGL.1.2.dylib; sourceTree = "<absolute>"; };
+		21BD836E14E4B66400ACC45F /* libGL.1.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGL.1.2.dylib; path = /usr/X11/lib/libGL.1.2.dylib; sourceTree = "<absolute>"; };
+		21BD836F14E4B66400ACC45F /* libGL.1.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGL.1.2.dylib; path = /usr/X11/lib/libGL.1.2.dylib; sourceTree = "<absolute>"; };
+		21BD837014E4B66400ACC45F /* libGLU.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLU.1.3.dylib; path = /usr/X11/lib/libGLU.1.3.dylib; sourceTree = "<absolute>"; };
+		21BD837114E4B66400ACC45F /* libGLU.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLU.1.3.dylib; path = /usr/X11/lib/libGLU.1.3.dylib; sourceTree = "<absolute>"; };
+		21BD837214E4B66400ACC45F /* libGLU.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLU.1.3.dylib; path = /usr/X11/lib/libGLU.1.3.dylib; sourceTree = "<absolute>"; };
+		21BD837314E4B66400ACC45F /* libglut.3.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglut.3.7.dylib; path = /usr/X11/lib/libglut.3.7.dylib; sourceTree = "<absolute>"; };
+		21BD837414E4B66400ACC45F /* libglut.3.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglut.3.7.dylib; path = /usr/X11/lib/libglut.3.7.dylib; sourceTree = "<absolute>"; };
+		21BD837514E4B66400ACC45F /* libglut.3.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglut.3.7.dylib; path = /usr/X11/lib/libglut.3.7.dylib; sourceTree = "<absolute>"; };
+		21BD837614E4B66400ACC45F /* libICE.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libICE.6.dylib; path = /usr/X11/lib/libICE.6.dylib; sourceTree = "<absolute>"; };
+		21BD837714E4B66400ACC45F /* libICE.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libICE.6.dylib; path = /usr/X11/lib/libICE.6.dylib; sourceTree = "<absolute>"; };
+		21BD837814E4B66400ACC45F /* libICE.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libICE.6.dylib; path = /usr/X11/lib/libICE.6.dylib; sourceTree = "<absolute>"; };
+		21BD837914E4B66400ACC45F /* liblbxutil.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liblbxutil.1.dylib; path = /usr/X11/lib/liblbxutil.1.dylib; sourceTree = "<absolute>"; };
+		21BD837A14E4B66400ACC45F /* liblbxutil.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liblbxutil.1.dylib; path = /usr/X11/lib/liblbxutil.1.dylib; sourceTree = "<absolute>"; };
+		21BD837B14E4B66400ACC45F /* liblbxutil.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liblbxutil.1.dylib; path = /usr/X11/lib/liblbxutil.1.dylib; sourceTree = "<absolute>"; };
+		21BD837C14E4B66400ACC45F /* liboldX.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liboldX.6.dylib; path = /usr/X11/lib/liboldX.6.dylib; sourceTree = "<absolute>"; };
+		21BD837D14E4B66400ACC45F /* liboldX.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liboldX.6.dylib; path = /usr/X11/lib/liboldX.6.dylib; sourceTree = "<absolute>"; };
+		21BD837E14E4B66400ACC45F /* liboldX.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liboldX.6.dylib; path = /usr/X11/lib/liboldX.6.dylib; sourceTree = "<absolute>"; };
+		21BD837F14E4B66400ACC45F /* libOSMesa.7.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOSMesa.7.2.dylib; path = /usr/X11/lib/libOSMesa.7.2.dylib; sourceTree = "<absolute>"; };
+		21BD838014E4B66400ACC45F /* libOSMesa.7.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOSMesa.7.2.dylib; path = /usr/X11/lib/libOSMesa.7.2.dylib; sourceTree = "<absolute>"; };
+		21BD838114E4B66400ACC45F /* libOSMesa.7.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOSMesa.7.2.dylib; path = /usr/X11/lib/libOSMesa.7.2.dylib; sourceTree = "<absolute>"; };
+		21BD838214E4B66400ACC45F /* libpixman-1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpixman-1.0.dylib"; path = "/usr/X11/lib/libpixman-1.0.dylib"; sourceTree = "<absolute>"; };
+		21BD838314E4B66400ACC45F /* libpixman-1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpixman-1.0.dylib"; path = "/usr/X11/lib/libpixman-1.0.dylib"; sourceTree = "<absolute>"; };
+		21BD838414E4B66400ACC45F /* libpixman-1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpixman-1.0.dylib"; path = "/usr/X11/lib/libpixman-1.0.dylib"; sourceTree = "<absolute>"; };
+		21BD838514E4B66400ACC45F /* libpng.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng.3.dylib; path = /usr/X11/lib/libpng.3.dylib; sourceTree = "<absolute>"; };
+		21BD838614E4B66400ACC45F /* libpng.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng.3.dylib; path = /usr/X11/lib/libpng.3.dylib; sourceTree = "<absolute>"; };
+		21BD838714E4B66400ACC45F /* libpng.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng.3.dylib; path = /usr/X11/lib/libpng.3.dylib; sourceTree = "<absolute>"; };
+		21BD838814E4B66400ACC45F /* libpng.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng.3.dylib; path = /usr/X11/lib/libpng.3.dylib; sourceTree = "<absolute>"; };
+		21BD838914E4B66400ACC45F /* libpng12.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng12.0.dylib; path = /usr/X11/lib/libpng12.0.dylib; sourceTree = "<absolute>"; };
+		21BD838A14E4B66400ACC45F /* libpng12.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng12.0.dylib; path = /usr/X11/lib/libpng12.0.dylib; sourceTree = "<absolute>"; };
+		21BD838B14E4B66400ACC45F /* libpng12.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng12.0.dylib; path = /usr/X11/lib/libpng12.0.dylib; sourceTree = "<absolute>"; };
+		21BD838C14E4B66400ACC45F /* libpng12.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng12.0.dylib; path = /usr/X11/lib/libpng12.0.dylib; sourceTree = "<absolute>"; };
+		21BD838D14E4B66400ACC45F /* libpng12.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng12.0.dylib; path = /usr/X11/lib/libpng12.0.dylib; sourceTree = "<absolute>"; };
+		21BD838E14E4B66400ACC45F /* libpng12.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng12.0.dylib; path = /usr/X11/lib/libpng12.0.dylib; sourceTree = "<absolute>"; };
+		21BD838F14E4B66400ACC45F /* libSM.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSM.6.dylib; path = /usr/X11/lib/libSM.6.dylib; sourceTree = "<absolute>"; };
+		21BD839014E4B66400ACC45F /* libSM.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSM.6.dylib; path = /usr/X11/lib/libSM.6.dylib; sourceTree = "<absolute>"; };
+		21BD839114E4B66400ACC45F /* libSM.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSM.6.dylib; path = /usr/X11/lib/libSM.6.dylib; sourceTree = "<absolute>"; };
+		21BD839214E4B66400ACC45F /* libX11.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libX11.6.dylib; path = /usr/X11/lib/libX11.6.dylib; sourceTree = "<absolute>"; };
+		21BD839314E4B66400ACC45F /* libX11.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libX11.6.dylib; path = /usr/X11/lib/libX11.6.dylib; sourceTree = "<absolute>"; };
+		21BD839414E4B66400ACC45F /* libX11.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libX11.6.dylib; path = /usr/X11/lib/libX11.6.dylib; sourceTree = "<absolute>"; };
+		21BD839514E4B66400ACC45F /* libXau.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXau.6.dylib; path = /usr/X11/lib/libXau.6.dylib; sourceTree = "<absolute>"; };
+		21BD839614E4B66400ACC45F /* libXau.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXau.6.dylib; path = /usr/X11/lib/libXau.6.dylib; sourceTree = "<absolute>"; };
+		21BD839714E4B66400ACC45F /* libXau.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXau.6.dylib; path = /usr/X11/lib/libXau.6.dylib; sourceTree = "<absolute>"; };
+		21BD839814E4B66400ACC45F /* libXaw6.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXaw6.6.dylib; path = /usr/X11/lib/libXaw6.6.dylib; sourceTree = "<absolute>"; };
+		21BD839914E4B66400ACC45F /* libXaw7.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXaw7.7.dylib; path = /usr/X11/lib/libXaw7.7.dylib; sourceTree = "<absolute>"; };
+		21BD839A14E4B66400ACC45F /* libXaw8.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXaw8.8.dylib; path = /usr/X11/lib/libXaw8.8.dylib; sourceTree = "<absolute>"; };
+		21BD839B14E4B66400ACC45F /* libXaw7.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXaw7.7.dylib; path = /usr/X11/lib/libXaw7.7.dylib; sourceTree = "<absolute>"; };
+		21BD839C14E4B66400ACC45F /* libXaw6.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXaw6.6.dylib; path = /usr/X11/lib/libXaw6.6.dylib; sourceTree = "<absolute>"; };
+		21BD839D14E4B66400ACC45F /* libXaw6.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXaw6.6.dylib; path = /usr/X11/lib/libXaw6.6.dylib; sourceTree = "<absolute>"; };
+		21BD839E14E4B66400ACC45F /* libXaw6.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXaw6.6.dylib; path = /usr/X11/lib/libXaw6.6.dylib; sourceTree = "<absolute>"; };
+		21BD839F14E4B66400ACC45F /* libXaw7.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXaw7.7.dylib; path = /usr/X11/lib/libXaw7.7.dylib; sourceTree = "<absolute>"; };
+		21BD83A014E4B66400ACC45F /* libXaw7.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXaw7.7.dylib; path = /usr/X11/lib/libXaw7.7.dylib; sourceTree = "<absolute>"; };
+		21BD83A114E4B66400ACC45F /* libXaw7.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXaw7.7.dylib; path = /usr/X11/lib/libXaw7.7.dylib; sourceTree = "<absolute>"; };
+		21BD83A214E4B66400ACC45F /* libXaw8.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXaw8.8.dylib; path = /usr/X11/lib/libXaw8.8.dylib; sourceTree = "<absolute>"; };
+		21BD83A314E4B66400ACC45F /* libXaw8.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXaw8.8.dylib; path = /usr/X11/lib/libXaw8.8.dylib; sourceTree = "<absolute>"; };
+		21BD83A414E4B66400ACC45F /* libXaw8.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXaw8.8.dylib; path = /usr/X11/lib/libXaw8.8.dylib; sourceTree = "<absolute>"; };
+		21BD83A514E4B66400ACC45F /* libxcb-atom.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-atom.1.dylib"; path = "/usr/X11/lib/libxcb-atom.1.dylib"; sourceTree = "<absolute>"; };
+		21BD83A614E4B66400ACC45F /* libxcb-atom.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-atom.1.dylib"; path = "/usr/X11/lib/libxcb-atom.1.dylib"; sourceTree = "<absolute>"; };
+		21BD83A714E4B66400ACC45F /* libxcb-atom.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-atom.1.dylib"; path = "/usr/X11/lib/libxcb-atom.1.dylib"; sourceTree = "<absolute>"; };
+		21BD83A814E4B66400ACC45F /* libxcb-aux.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-aux.0.dylib"; path = "/usr/X11/lib/libxcb-aux.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83A914E4B66400ACC45F /* libxcb-aux.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-aux.0.dylib"; path = "/usr/X11/lib/libxcb-aux.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83AA14E4B66400ACC45F /* libxcb-aux.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-aux.0.dylib"; path = "/usr/X11/lib/libxcb-aux.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83AB14E4B66400ACC45F /* libxcb-composite.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-composite.0.dylib"; path = "/usr/X11/lib/libxcb-composite.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83AC14E4B66400ACC45F /* libxcb-composite.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-composite.0.dylib"; path = "/usr/X11/lib/libxcb-composite.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83AD14E4B66400ACC45F /* libxcb-composite.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-composite.0.dylib"; path = "/usr/X11/lib/libxcb-composite.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83AE14E4B66400ACC45F /* libxcb-damage.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-damage.0.dylib"; path = "/usr/X11/lib/libxcb-damage.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83AF14E4B66400ACC45F /* libxcb-damage.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-damage.0.dylib"; path = "/usr/X11/lib/libxcb-damage.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83B014E4B66400ACC45F /* libxcb-damage.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-damage.0.dylib"; path = "/usr/X11/lib/libxcb-damage.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83B114E4B66400ACC45F /* libxcb-dpms.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-dpms.0.dylib"; path = "/usr/X11/lib/libxcb-dpms.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83B214E4B66400ACC45F /* libxcb-dpms.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-dpms.0.dylib"; path = "/usr/X11/lib/libxcb-dpms.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83B314E4B66400ACC45F /* libxcb-dpms.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-dpms.0.dylib"; path = "/usr/X11/lib/libxcb-dpms.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83B414E4B66400ACC45F /* libxcb-event.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-event.1.dylib"; path = "/usr/X11/lib/libxcb-event.1.dylib"; sourceTree = "<absolute>"; };
+		21BD83B514E4B66400ACC45F /* libxcb-event.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-event.1.dylib"; path = "/usr/X11/lib/libxcb-event.1.dylib"; sourceTree = "<absolute>"; };
+		21BD83B614E4B66400ACC45F /* libxcb-event.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-event.1.dylib"; path = "/usr/X11/lib/libxcb-event.1.dylib"; sourceTree = "<absolute>"; };
+		21BD83B714E4B66400ACC45F /* libxcb-glx.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-glx.0.dylib"; path = "/usr/X11/lib/libxcb-glx.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83B814E4B66400ACC45F /* libxcb-glx.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-glx.0.dylib"; path = "/usr/X11/lib/libxcb-glx.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83B914E4B66400ACC45F /* libxcb-glx.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-glx.0.dylib"; path = "/usr/X11/lib/libxcb-glx.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83BA14E4B66400ACC45F /* libxcb-icccm.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-icccm.1.dylib"; path = "/usr/X11/lib/libxcb-icccm.1.dylib"; sourceTree = "<absolute>"; };
+		21BD83BB14E4B66400ACC45F /* libxcb-icccm.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-icccm.1.dylib"; path = "/usr/X11/lib/libxcb-icccm.1.dylib"; sourceTree = "<absolute>"; };
+		21BD83BC14E4B66400ACC45F /* libxcb-icccm.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-icccm.1.dylib"; path = "/usr/X11/lib/libxcb-icccm.1.dylib"; sourceTree = "<absolute>"; };
+		21BD83BD14E4B66400ACC45F /* libxcb-image.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-image.0.dylib"; path = "/usr/X11/lib/libxcb-image.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83BE14E4B66400ACC45F /* libxcb-image.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-image.0.dylib"; path = "/usr/X11/lib/libxcb-image.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83BF14E4B66400ACC45F /* libxcb-image.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-image.0.dylib"; path = "/usr/X11/lib/libxcb-image.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83C014E4B66400ACC45F /* libxcb-keysyms.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-keysyms.0.dylib"; path = "/usr/X11/lib/libxcb-keysyms.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83C114E4B66400ACC45F /* libxcb-keysyms.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-keysyms.0.dylib"; path = "/usr/X11/lib/libxcb-keysyms.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83C214E4B66400ACC45F /* libxcb-keysyms.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-keysyms.0.dylib"; path = "/usr/X11/lib/libxcb-keysyms.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83C314E4B66400ACC45F /* libxcb-property.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-property.1.dylib"; path = "/usr/X11/lib/libxcb-property.1.dylib"; sourceTree = "<absolute>"; };
+		21BD83C414E4B66400ACC45F /* libxcb-property.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-property.1.dylib"; path = "/usr/X11/lib/libxcb-property.1.dylib"; sourceTree = "<absolute>"; };
+		21BD83C514E4B66400ACC45F /* libxcb-property.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-property.1.dylib"; path = "/usr/X11/lib/libxcb-property.1.dylib"; sourceTree = "<absolute>"; };
+		21BD83C614E4B66400ACC45F /* libxcb-randr.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-randr.0.dylib"; path = "/usr/X11/lib/libxcb-randr.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83C714E4B66400ACC45F /* libxcb-randr.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-randr.0.dylib"; path = "/usr/X11/lib/libxcb-randr.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83C814E4B66400ACC45F /* libxcb-randr.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-randr.0.dylib"; path = "/usr/X11/lib/libxcb-randr.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83C914E4B66400ACC45F /* libxcb-record.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-record.0.dylib"; path = "/usr/X11/lib/libxcb-record.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83CA14E4B66400ACC45F /* libxcb-record.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-record.0.dylib"; path = "/usr/X11/lib/libxcb-record.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83CB14E4B66400ACC45F /* libxcb-record.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-record.0.dylib"; path = "/usr/X11/lib/libxcb-record.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83CC14E4B66400ACC45F /* libxcb-render-util.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-render-util.0.dylib"; path = "/usr/X11/lib/libxcb-render-util.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83CD14E4B66400ACC45F /* libxcb-render-util.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-render-util.0.dylib"; path = "/usr/X11/lib/libxcb-render-util.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83CE14E4B66400ACC45F /* libxcb-render-util.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-render-util.0.dylib"; path = "/usr/X11/lib/libxcb-render-util.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83CF14E4B66400ACC45F /* libxcb-render.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-render.0.dylib"; path = "/usr/X11/lib/libxcb-render.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83D014E4B66400ACC45F /* libxcb-render.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-render.0.dylib"; path = "/usr/X11/lib/libxcb-render.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83D114E4B66400ACC45F /* libxcb-render.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-render.0.dylib"; path = "/usr/X11/lib/libxcb-render.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83D214E4B66400ACC45F /* libxcb-reply.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-reply.1.dylib"; path = "/usr/X11/lib/libxcb-reply.1.dylib"; sourceTree = "<absolute>"; };
+		21BD83D314E4B66400ACC45F /* libxcb-reply.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-reply.1.dylib"; path = "/usr/X11/lib/libxcb-reply.1.dylib"; sourceTree = "<absolute>"; };
+		21BD83D414E4B66400ACC45F /* libxcb-reply.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-reply.1.dylib"; path = "/usr/X11/lib/libxcb-reply.1.dylib"; sourceTree = "<absolute>"; };
+		21BD83D514E4B66400ACC45F /* libxcb-res.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-res.0.dylib"; path = "/usr/X11/lib/libxcb-res.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83D614E4B66400ACC45F /* libxcb-res.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-res.0.dylib"; path = "/usr/X11/lib/libxcb-res.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83D714E4B66400ACC45F /* libxcb-res.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-res.0.dylib"; path = "/usr/X11/lib/libxcb-res.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83D814E4B66400ACC45F /* libxcb-screensaver.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-screensaver.0.dylib"; path = "/usr/X11/lib/libxcb-screensaver.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83D914E4B66400ACC45F /* libxcb-screensaver.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-screensaver.0.dylib"; path = "/usr/X11/lib/libxcb-screensaver.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83DA14E4B66400ACC45F /* libxcb-screensaver.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-screensaver.0.dylib"; path = "/usr/X11/lib/libxcb-screensaver.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83DB14E4B66400ACC45F /* libxcb-shape.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-shape.0.dylib"; path = "/usr/X11/lib/libxcb-shape.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83DC14E4B66400ACC45F /* libxcb-shape.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-shape.0.dylib"; path = "/usr/X11/lib/libxcb-shape.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83DD14E4B66400ACC45F /* libxcb-shape.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-shape.0.dylib"; path = "/usr/X11/lib/libxcb-shape.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83DE14E4B66400ACC45F /* libxcb-shm.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-shm.0.dylib"; path = "/usr/X11/lib/libxcb-shm.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83DF14E4B66400ACC45F /* libxcb-shm.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-shm.0.dylib"; path = "/usr/X11/lib/libxcb-shm.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83E014E4B66400ACC45F /* libxcb-shm.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-shm.0.dylib"; path = "/usr/X11/lib/libxcb-shm.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83E114E4B66400ACC45F /* libxcb-sync.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-sync.0.dylib"; path = "/usr/X11/lib/libxcb-sync.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83E214E4B66400ACC45F /* libxcb-sync.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-sync.0.dylib"; path = "/usr/X11/lib/libxcb-sync.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83E314E4B66400ACC45F /* libxcb-sync.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-sync.0.dylib"; path = "/usr/X11/lib/libxcb-sync.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83E414E4B66400ACC45F /* libxcb-wm.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-wm.0.dylib"; path = "/usr/X11/lib/libxcb-wm.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83E514E4B66400ACC45F /* libxcb-wm.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-wm.0.dylib"; path = "/usr/X11/lib/libxcb-wm.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83E614E4B66400ACC45F /* libxcb-wm.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-wm.0.dylib"; path = "/usr/X11/lib/libxcb-wm.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83E714E4B66400ACC45F /* libxcb-xevie.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xevie.0.dylib"; path = "/usr/X11/lib/libxcb-xevie.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83E814E4B66400ACC45F /* libxcb-xevie.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xevie.0.dylib"; path = "/usr/X11/lib/libxcb-xevie.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83E914E4B66400ACC45F /* libxcb-xevie.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xevie.0.dylib"; path = "/usr/X11/lib/libxcb-xevie.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83EA14E4B66400ACC45F /* libxcb-xf86dri.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xf86dri.0.dylib"; path = "/usr/X11/lib/libxcb-xf86dri.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83EB14E4B66400ACC45F /* libxcb-xf86dri.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xf86dri.0.dylib"; path = "/usr/X11/lib/libxcb-xf86dri.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83EC14E4B66400ACC45F /* libxcb-xf86dri.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xf86dri.0.dylib"; path = "/usr/X11/lib/libxcb-xf86dri.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83ED14E4B66400ACC45F /* libxcb-xfixes.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xfixes.0.dylib"; path = "/usr/X11/lib/libxcb-xfixes.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83EE14E4B66400ACC45F /* libxcb-xfixes.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xfixes.0.dylib"; path = "/usr/X11/lib/libxcb-xfixes.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83EF14E4B66400ACC45F /* libxcb-xfixes.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xfixes.0.dylib"; path = "/usr/X11/lib/libxcb-xfixes.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83F014E4B66400ACC45F /* libxcb-xinerama.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xinerama.0.dylib"; path = "/usr/X11/lib/libxcb-xinerama.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83F114E4B66400ACC45F /* libxcb-xinerama.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xinerama.0.dylib"; path = "/usr/X11/lib/libxcb-xinerama.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83F214E4B66400ACC45F /* libxcb-xinerama.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xinerama.0.dylib"; path = "/usr/X11/lib/libxcb-xinerama.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83F314E4B66400ACC45F /* libxcb-xprint.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xprint.0.dylib"; path = "/usr/X11/lib/libxcb-xprint.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83F414E4B66400ACC45F /* libxcb-xprint.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xprint.0.dylib"; path = "/usr/X11/lib/libxcb-xprint.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83F514E4B66400ACC45F /* libxcb-xprint.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xprint.0.dylib"; path = "/usr/X11/lib/libxcb-xprint.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83F614E4B66400ACC45F /* libxcb-xtest.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xtest.0.dylib"; path = "/usr/X11/lib/libxcb-xtest.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83F714E4B66400ACC45F /* libxcb-xtest.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xtest.0.dylib"; path = "/usr/X11/lib/libxcb-xtest.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83F814E4B66400ACC45F /* libxcb-xtest.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xtest.0.dylib"; path = "/usr/X11/lib/libxcb-xtest.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83F914E4B66400ACC45F /* libxcb-xv.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xv.0.dylib"; path = "/usr/X11/lib/libxcb-xv.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83FA14E4B66400ACC45F /* libxcb-xv.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xv.0.dylib"; path = "/usr/X11/lib/libxcb-xv.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83FB14E4B66400ACC45F /* libxcb-xv.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xv.0.dylib"; path = "/usr/X11/lib/libxcb-xv.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83FC14E4B66400ACC45F /* libxcb-xvmc.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xvmc.0.dylib"; path = "/usr/X11/lib/libxcb-xvmc.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83FD14E4B66400ACC45F /* libxcb-xvmc.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xvmc.0.dylib"; path = "/usr/X11/lib/libxcb-xvmc.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83FE14E4B66400ACC45F /* libxcb-xvmc.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xvmc.0.dylib"; path = "/usr/X11/lib/libxcb-xvmc.0.dylib"; sourceTree = "<absolute>"; };
+		21BD83FF14E4B66400ACC45F /* libxcb.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxcb.1.dylib; path = /usr/X11/lib/libxcb.1.dylib; sourceTree = "<absolute>"; };
+		21BD840014E4B66400ACC45F /* libxcb.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxcb.1.dylib; path = /usr/X11/lib/libxcb.1.dylib; sourceTree = "<absolute>"; };
+		21BD840114E4B66400ACC45F /* libxcb.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxcb.1.dylib; path = /usr/X11/lib/libxcb.1.dylib; sourceTree = "<absolute>"; };
+		21BD840214E4B66400ACC45F /* libXcomposite.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXcomposite.1.dylib; path = /usr/X11/lib/libXcomposite.1.dylib; sourceTree = "<absolute>"; };
+		21BD840314E4B66400ACC45F /* libXcomposite.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXcomposite.1.dylib; path = /usr/X11/lib/libXcomposite.1.dylib; sourceTree = "<absolute>"; };
+		21BD840414E4B66400ACC45F /* libXcomposite.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXcomposite.1.dylib; path = /usr/X11/lib/libXcomposite.1.dylib; sourceTree = "<absolute>"; };
+		21BD840514E4B66400ACC45F /* libXcursor.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXcursor.1.dylib; path = /usr/X11/lib/libXcursor.1.dylib; sourceTree = "<absolute>"; };
+		21BD840614E4B66400ACC45F /* libXcursor.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXcursor.1.dylib; path = /usr/X11/lib/libXcursor.1.dylib; sourceTree = "<absolute>"; };
+		21BD840714E4B66400ACC45F /* libXcursor.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXcursor.1.dylib; path = /usr/X11/lib/libXcursor.1.dylib; sourceTree = "<absolute>"; };
+		21BD840814E4B66400ACC45F /* libXdamage.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXdamage.1.dylib; path = /usr/X11/lib/libXdamage.1.dylib; sourceTree = "<absolute>"; };
+		21BD840914E4B66400ACC45F /* libXdamage.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXdamage.1.dylib; path = /usr/X11/lib/libXdamage.1.dylib; sourceTree = "<absolute>"; };
+		21BD840A14E4B66400ACC45F /* libXdamage.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXdamage.1.dylib; path = /usr/X11/lib/libXdamage.1.dylib; sourceTree = "<absolute>"; };
+		21BD840B14E4B66400ACC45F /* libXdmcp.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXdmcp.6.dylib; path = /usr/X11/lib/libXdmcp.6.dylib; sourceTree = "<absolute>"; };
+		21BD840C14E4B66400ACC45F /* libXdmcp.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXdmcp.6.dylib; path = /usr/X11/lib/libXdmcp.6.dylib; sourceTree = "<absolute>"; };
+		21BD840D14E4B66400ACC45F /* libXdmcp.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXdmcp.6.dylib; path = /usr/X11/lib/libXdmcp.6.dylib; sourceTree = "<absolute>"; };
+		21BD840E14E4B66400ACC45F /* libXevie.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXevie.1.dylib; path = /usr/X11/lib/libXevie.1.dylib; sourceTree = "<absolute>"; };
+		21BD840F14E4B66400ACC45F /* libXevie.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXevie.1.dylib; path = /usr/X11/lib/libXevie.1.dylib; sourceTree = "<absolute>"; };
+		21BD841014E4B66400ACC45F /* libXevie.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXevie.1.dylib; path = /usr/X11/lib/libXevie.1.dylib; sourceTree = "<absolute>"; };
+		21BD841114E4B66400ACC45F /* libXext.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXext.6.dylib; path = /usr/X11/lib/libXext.6.dylib; sourceTree = "<absolute>"; };
+		21BD841214E4B66400ACC45F /* libXext.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXext.6.dylib; path = /usr/X11/lib/libXext.6.dylib; sourceTree = "<absolute>"; };
+		21BD841314E4B66400ACC45F /* libXext.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXext.6.dylib; path = /usr/X11/lib/libXext.6.dylib; sourceTree = "<absolute>"; };
+		21BD841414E4B66400ACC45F /* libXfixes.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXfixes.3.dylib; path = /usr/X11/lib/libXfixes.3.dylib; sourceTree = "<absolute>"; };
+		21BD841514E4B66400ACC45F /* libXfixes.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXfixes.3.dylib; path = /usr/X11/lib/libXfixes.3.dylib; sourceTree = "<absolute>"; };
+		21BD841614E4B66400ACC45F /* libXfixes.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXfixes.3.dylib; path = /usr/X11/lib/libXfixes.3.dylib; sourceTree = "<absolute>"; };
+		21BD841714E4B66400ACC45F /* libXfont.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXfont.1.dylib; path = /usr/X11/lib/libXfont.1.dylib; sourceTree = "<absolute>"; };
+		21BD841814E4B66400ACC45F /* libXfont.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXfont.1.dylib; path = /usr/X11/lib/libXfont.1.dylib; sourceTree = "<absolute>"; };
+		21BD841914E4B66400ACC45F /* libXfont.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXfont.1.dylib; path = /usr/X11/lib/libXfont.1.dylib; sourceTree = "<absolute>"; };
+		21BD841A14E4B66400ACC45F /* libXfontcache.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXfontcache.1.dylib; path = /usr/X11/lib/libXfontcache.1.dylib; sourceTree = "<absolute>"; };
+		21BD841B14E4B66400ACC45F /* libXfontcache.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXfontcache.1.dylib; path = /usr/X11/lib/libXfontcache.1.dylib; sourceTree = "<absolute>"; };
+		21BD841C14E4B66400ACC45F /* libXfontcache.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXfontcache.1.dylib; path = /usr/X11/lib/libXfontcache.1.dylib; sourceTree = "<absolute>"; };
+		21BD841D14E4B66400ACC45F /* libXft.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXft.2.dylib; path = /usr/X11/lib/libXft.2.dylib; sourceTree = "<absolute>"; };
+		21BD841E14E4B66400ACC45F /* libXft.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXft.2.dylib; path = /usr/X11/lib/libXft.2.dylib; sourceTree = "<absolute>"; };
+		21BD841F14E4B66400ACC45F /* libXft.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXft.2.dylib; path = /usr/X11/lib/libXft.2.dylib; sourceTree = "<absolute>"; };
+		21BD842014E4B66400ACC45F /* libXi.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXi.6.dylib; path = /usr/X11/lib/libXi.6.dylib; sourceTree = "<absolute>"; };
+		21BD842114E4B66400ACC45F /* libXi.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXi.6.dylib; path = /usr/X11/lib/libXi.6.dylib; sourceTree = "<absolute>"; };
+		21BD842214E4B66400ACC45F /* libXi.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXi.6.dylib; path = /usr/X11/lib/libXi.6.dylib; sourceTree = "<absolute>"; };
+		21BD842314E4B66400ACC45F /* libXinerama.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXinerama.1.dylib; path = /usr/X11/lib/libXinerama.1.dylib; sourceTree = "<absolute>"; };
+		21BD842414E4B66400ACC45F /* libXinerama.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXinerama.1.dylib; path = /usr/X11/lib/libXinerama.1.dylib; sourceTree = "<absolute>"; };
+		21BD842514E4B66400ACC45F /* libXinerama.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXinerama.1.dylib; path = /usr/X11/lib/libXinerama.1.dylib; sourceTree = "<absolute>"; };
+		21BD842614E4B66400ACC45F /* libxkbfile.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxkbfile.1.dylib; path = /usr/X11/lib/libxkbfile.1.dylib; sourceTree = "<absolute>"; };
+		21BD842714E4B66400ACC45F /* libxkbfile.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxkbfile.1.dylib; path = /usr/X11/lib/libxkbfile.1.dylib; sourceTree = "<absolute>"; };
+		21BD842814E4B66400ACC45F /* libxkbfile.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxkbfile.1.dylib; path = /usr/X11/lib/libxkbfile.1.dylib; sourceTree = "<absolute>"; };
+		21BD842914E4B66400ACC45F /* libxkbui.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxkbui.1.dylib; path = /usr/X11/lib/libxkbui.1.dylib; sourceTree = "<absolute>"; };
+		21BD842A14E4B66400ACC45F /* libxkbui.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxkbui.1.dylib; path = /usr/X11/lib/libxkbui.1.dylib; sourceTree = "<absolute>"; };
+		21BD842B14E4B66400ACC45F /* libxkbui.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxkbui.1.dylib; path = /usr/X11/lib/libxkbui.1.dylib; sourceTree = "<absolute>"; };
+		21BD842C14E4B66400ACC45F /* libXmu.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXmu.6.dylib; path = /usr/X11/lib/libXmu.6.dylib; sourceTree = "<absolute>"; };
+		21BD842D14E4B66400ACC45F /* libXmu.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXmu.6.dylib; path = /usr/X11/lib/libXmu.6.dylib; sourceTree = "<absolute>"; };
+		21BD842E14E4B66400ACC45F /* libXmu.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXmu.6.dylib; path = /usr/X11/lib/libXmu.6.dylib; sourceTree = "<absolute>"; };
+		21BD842F14E4B66400ACC45F /* libXmuu.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXmuu.1.dylib; path = /usr/X11/lib/libXmuu.1.dylib; sourceTree = "<absolute>"; };
+		21BD843014E4B66400ACC45F /* libXmuu.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXmuu.1.dylib; path = /usr/X11/lib/libXmuu.1.dylib; sourceTree = "<absolute>"; };
+		21BD843114E4B66400ACC45F /* libXmuu.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXmuu.1.dylib; path = /usr/X11/lib/libXmuu.1.dylib; sourceTree = "<absolute>"; };
+		21BD843214E4B66400ACC45F /* libXp.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXp.6.dylib; path = /usr/X11/lib/libXp.6.dylib; sourceTree = "<absolute>"; };
+		21BD843314E4B66400ACC45F /* libXp.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXp.6.dylib; path = /usr/X11/lib/libXp.6.dylib; sourceTree = "<absolute>"; };
+		21BD843414E4B66400ACC45F /* libXp.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXp.6.dylib; path = /usr/X11/lib/libXp.6.dylib; sourceTree = "<absolute>"; };
+		21BD843514E4B66400ACC45F /* libXpm.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXpm.4.dylib; path = /usr/X11/lib/libXpm.4.dylib; sourceTree = "<absolute>"; };
+		21BD843614E4B66400ACC45F /* libXpm.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXpm.4.dylib; path = /usr/X11/lib/libXpm.4.dylib; sourceTree = "<absolute>"; };
+		21BD843714E4B66400ACC45F /* libXpm.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXpm.4.dylib; path = /usr/X11/lib/libXpm.4.dylib; sourceTree = "<absolute>"; };
+		21BD843814E4B66400ACC45F /* libXprintAppUtil.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXprintAppUtil.1.dylib; path = /usr/X11/lib/libXprintAppUtil.1.dylib; sourceTree = "<absolute>"; };
+		21BD843914E4B66400ACC45F /* libXprintAppUtil.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXprintAppUtil.1.dylib; path = /usr/X11/lib/libXprintAppUtil.1.dylib; sourceTree = "<absolute>"; };
+		21BD843A14E4B66400ACC45F /* libXprintAppUtil.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXprintAppUtil.1.dylib; path = /usr/X11/lib/libXprintAppUtil.1.dylib; sourceTree = "<absolute>"; };
+		21BD843B14E4B66400ACC45F /* libXprintUtil.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXprintUtil.1.dylib; path = /usr/X11/lib/libXprintUtil.1.dylib; sourceTree = "<absolute>"; };
+		21BD843C14E4B66400ACC45F /* libXprintUtil.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXprintUtil.1.dylib; path = /usr/X11/lib/libXprintUtil.1.dylib; sourceTree = "<absolute>"; };
+		21BD843D14E4B66400ACC45F /* libXprintUtil.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXprintUtil.1.dylib; path = /usr/X11/lib/libXprintUtil.1.dylib; sourceTree = "<absolute>"; };
+		21BD843E14E4B66400ACC45F /* libXrandr.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXrandr.2.dylib; path = /usr/X11/lib/libXrandr.2.dylib; sourceTree = "<absolute>"; };
+		21BD843F14E4B66400ACC45F /* libXrandr.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXrandr.2.dylib; path = /usr/X11/lib/libXrandr.2.dylib; sourceTree = "<absolute>"; };
+		21BD844014E4B66400ACC45F /* libXrandr.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXrandr.2.dylib; path = /usr/X11/lib/libXrandr.2.dylib; sourceTree = "<absolute>"; };
+		21BD844114E4B66400ACC45F /* libXrender.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXrender.1.dylib; path = /usr/X11/lib/libXrender.1.dylib; sourceTree = "<absolute>"; };
+		21BD844214E4B66400ACC45F /* libXrender.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXrender.1.dylib; path = /usr/X11/lib/libXrender.1.dylib; sourceTree = "<absolute>"; };
+		21BD844314E4B66400ACC45F /* libXrender.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXrender.1.dylib; path = /usr/X11/lib/libXrender.1.dylib; sourceTree = "<absolute>"; };
+		21BD844414E4B66400ACC45F /* libXRes.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXRes.1.dylib; path = /usr/X11/lib/libXRes.1.dylib; sourceTree = "<absolute>"; };
+		21BD844514E4B66400ACC45F /* libXRes.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXRes.1.dylib; path = /usr/X11/lib/libXRes.1.dylib; sourceTree = "<absolute>"; };
+		21BD844614E4B66400ACC45F /* libXRes.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXRes.1.dylib; path = /usr/X11/lib/libXRes.1.dylib; sourceTree = "<absolute>"; };
+		21BD844714E4B66400ACC45F /* libXss.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXss.1.dylib; path = /usr/X11/lib/libXss.1.dylib; sourceTree = "<absolute>"; };
+		21BD844814E4B66400ACC45F /* libXss.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXss.1.dylib; path = /usr/X11/lib/libXss.1.dylib; sourceTree = "<absolute>"; };
+		21BD844914E4B66400ACC45F /* libXss.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXss.1.dylib; path = /usr/X11/lib/libXss.1.dylib; sourceTree = "<absolute>"; };
+		21BD844A14E4B66400ACC45F /* libXt.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXt.6.dylib; path = /usr/X11/lib/libXt.6.dylib; sourceTree = "<absolute>"; };
+		21BD844B14E4B66400ACC45F /* libXt.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXt.6.dylib; path = /usr/X11/lib/libXt.6.dylib; sourceTree = "<absolute>"; };
+		21BD844C14E4B66400ACC45F /* libXt.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXt.6.dylib; path = /usr/X11/lib/libXt.6.dylib; sourceTree = "<absolute>"; };
+		21BD844D14E4B66400ACC45F /* libXTrap.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXTrap.6.dylib; path = /usr/X11/lib/libXTrap.6.dylib; sourceTree = "<absolute>"; };
+		21BD844E14E4B66400ACC45F /* libXTrap.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXTrap.6.dylib; path = /usr/X11/lib/libXTrap.6.dylib; sourceTree = "<absolute>"; };
+		21BD844F14E4B66400ACC45F /* libXTrap.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXTrap.6.dylib; path = /usr/X11/lib/libXTrap.6.dylib; sourceTree = "<absolute>"; };
+		21BD845014E4B66400ACC45F /* libXtst.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXtst.6.dylib; path = /usr/X11/lib/libXtst.6.dylib; sourceTree = "<absolute>"; };
+		21BD845114E4B66400ACC45F /* libXtst.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXtst.6.dylib; path = /usr/X11/lib/libXtst.6.dylib; sourceTree = "<absolute>"; };
+		21BD845214E4B66400ACC45F /* libXtst.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXtst.6.dylib; path = /usr/X11/lib/libXtst.6.dylib; sourceTree = "<absolute>"; };
+		21BD845314E4B66400ACC45F /* libXv.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXv.1.dylib; path = /usr/X11/lib/libXv.1.dylib; sourceTree = "<absolute>"; };
+		21BD845414E4B66400ACC45F /* libXv.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXv.1.dylib; path = /usr/X11/lib/libXv.1.dylib; sourceTree = "<absolute>"; };
+		21BD845514E4B66400ACC45F /* libXv.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXv.1.dylib; path = /usr/X11/lib/libXv.1.dylib; sourceTree = "<absolute>"; };
+		21BD845614E4B66400ACC45F /* libXvMC.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXvMC.1.dylib; path = /usr/X11/lib/libXvMC.1.dylib; sourceTree = "<absolute>"; };
+		21BD845714E4B66400ACC45F /* libXvMC.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXvMC.1.dylib; path = /usr/X11/lib/libXvMC.1.dylib; sourceTree = "<absolute>"; };
+		21BD845814E4B66400ACC45F /* libXvMC.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXvMC.1.dylib; path = /usr/X11/lib/libXvMC.1.dylib; sourceTree = "<absolute>"; };
+		21BD845914E4B66400ACC45F /* libXvMCW.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXvMCW.1.dylib; path = /usr/X11/lib/libXvMCW.1.dylib; sourceTree = "<absolute>"; };
+		21BD845A14E4B66400ACC45F /* libXvMCW.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXvMCW.1.dylib; path = /usr/X11/lib/libXvMCW.1.dylib; sourceTree = "<absolute>"; };
+		21BD845B14E4B66400ACC45F /* libXvMCW.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXvMCW.1.dylib; path = /usr/X11/lib/libXvMCW.1.dylib; sourceTree = "<absolute>"; };
+		21BD845C14E4B66400ACC45F /* libXxf86misc.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXxf86misc.1.dylib; path = /usr/X11/lib/libXxf86misc.1.dylib; sourceTree = "<absolute>"; };
+		21BD845D14E4B66400ACC45F /* libXxf86misc.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXxf86misc.1.dylib; path = /usr/X11/lib/libXxf86misc.1.dylib; sourceTree = "<absolute>"; };
+		21BD845E14E4B66400ACC45F /* libXxf86misc.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXxf86misc.1.dylib; path = /usr/X11/lib/libXxf86misc.1.dylib; sourceTree = "<absolute>"; };
+		21BD845F14E4B66400ACC45F /* libXxf86vm.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXxf86vm.1.dylib; path = /usr/X11/lib/libXxf86vm.1.dylib; sourceTree = "<absolute>"; };
+		21BD846014E4B66400ACC45F /* libXxf86vm.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXxf86vm.1.dylib; path = /usr/X11/lib/libXxf86vm.1.dylib; sourceTree = "<absolute>"; };
+		21BD846114E4B66400ACC45F /* libXxf86vm.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXxf86vm.1.dylib; path = /usr/X11/lib/libXxf86vm.1.dylib; sourceTree = "<absolute>"; };
+		21BD856C14E4BD2700ACC45F /* xbeizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xbeizer.h; path = /usr/X11/include/X11/../../../../Users/mactkg/Desktop/xwindow/xbeizer.h; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +551,270 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21BD846214E4B66400ACC45F /* libAppleWM.7.dylib in Frameworks */,
+				21BD846314E4B66400ACC45F /* libAppleWM.7.dylib in Frameworks */,
+				21BD846414E4B66400ACC45F /* libAppleWM.7.dylib in Frameworks */,
+				21BD846514E4B66400ACC45F /* libcairo.2.dylib in Frameworks */,
+				21BD846614E4B66400ACC45F /* libcairo.2.dylib in Frameworks */,
+				21BD846714E4B66400ACC45F /* libdmx.1.dylib in Frameworks */,
+				21BD846814E4B66400ACC45F /* libdmx.1.dylib in Frameworks */,
+				21BD846914E4B66400ACC45F /* libdmx.1.dylib in Frameworks */,
+				21BD846A14E4B66400ACC45F /* libfontconfig.1.dylib in Frameworks */,
+				21BD846B14E4B66400ACC45F /* libfontconfig.1.dylib in Frameworks */,
+				21BD846C14E4B66400ACC45F /* libfontconfig.1.dylib in Frameworks */,
+				21BD846D14E4B66400ACC45F /* libfontenc.1.dylib in Frameworks */,
+				21BD846E14E4B66400ACC45F /* libfontenc.1.dylib in Frameworks */,
+				21BD846F14E4B66400ACC45F /* libfontenc.1.dylib in Frameworks */,
+				21BD847014E4B66400ACC45F /* libfreetype.6.dylib in Frameworks */,
+				21BD847114E4B66400ACC45F /* libfreetype.6.dylib in Frameworks */,
+				21BD847214E4B66400ACC45F /* libFS.6.dylib in Frameworks */,
+				21BD847314E4B66400ACC45F /* libFS.6.dylib in Frameworks */,
+				21BD847414E4B66400ACC45F /* libFS.6.dylib in Frameworks */,
+				21BD847514E4B66400ACC45F /* libGL.1.2.dylib in Frameworks */,
+				21BD847614E4B66400ACC45F /* libGL.1.2.dylib in Frameworks */,
+				21BD847714E4B66400ACC45F /* libGL.1.2.dylib in Frameworks */,
+				21BD847814E4B66400ACC45F /* libGLU.1.3.dylib in Frameworks */,
+				21BD847914E4B66400ACC45F /* libGLU.1.3.dylib in Frameworks */,
+				21BD847A14E4B66400ACC45F /* libGLU.1.3.dylib in Frameworks */,
+				21BD847B14E4B66400ACC45F /* libglut.3.7.dylib in Frameworks */,
+				21BD847C14E4B66400ACC45F /* libglut.3.7.dylib in Frameworks */,
+				21BD847D14E4B66400ACC45F /* libglut.3.7.dylib in Frameworks */,
+				21BD847E14E4B66400ACC45F /* libICE.6.dylib in Frameworks */,
+				21BD847F14E4B66400ACC45F /* libICE.6.dylib in Frameworks */,
+				21BD848014E4B66400ACC45F /* libICE.6.dylib in Frameworks */,
+				21BD848114E4B66400ACC45F /* liblbxutil.1.dylib in Frameworks */,
+				21BD848214E4B66400ACC45F /* liblbxutil.1.dylib in Frameworks */,
+				21BD848314E4B66400ACC45F /* liblbxutil.1.dylib in Frameworks */,
+				21BD848414E4B66400ACC45F /* liboldX.6.dylib in Frameworks */,
+				21BD848514E4B66400ACC45F /* liboldX.6.dylib in Frameworks */,
+				21BD848614E4B66400ACC45F /* liboldX.6.dylib in Frameworks */,
+				21BD848714E4B66400ACC45F /* libOSMesa.7.2.dylib in Frameworks */,
+				21BD848814E4B66400ACC45F /* libOSMesa.7.2.dylib in Frameworks */,
+				21BD848914E4B66400ACC45F /* libOSMesa.7.2.dylib in Frameworks */,
+				21BD848A14E4B66400ACC45F /* libpixman-1.0.dylib in Frameworks */,
+				21BD848B14E4B66400ACC45F /* libpixman-1.0.dylib in Frameworks */,
+				21BD848C14E4B66400ACC45F /* libpixman-1.0.dylib in Frameworks */,
+				21BD848D14E4B66400ACC45F /* libpng.3.dylib in Frameworks */,
+				21BD848E14E4B66400ACC45F /* libpng.3.dylib in Frameworks */,
+				21BD848F14E4B66400ACC45F /* libpng.3.dylib in Frameworks */,
+				21BD849014E4B66400ACC45F /* libpng.3.dylib in Frameworks */,
+				21BD849114E4B66400ACC45F /* libpng12.0.dylib in Frameworks */,
+				21BD849214E4B66400ACC45F /* libpng12.0.dylib in Frameworks */,
+				21BD849314E4B66400ACC45F /* libpng12.0.dylib in Frameworks */,
+				21BD849414E4B66400ACC45F /* libpng12.0.dylib in Frameworks */,
+				21BD849514E4B66400ACC45F /* libpng12.0.dylib in Frameworks */,
+				21BD849614E4B66400ACC45F /* libpng12.0.dylib in Frameworks */,
+				21BD849714E4B66400ACC45F /* libSM.6.dylib in Frameworks */,
+				21BD849814E4B66400ACC45F /* libSM.6.dylib in Frameworks */,
+				21BD849914E4B66400ACC45F /* libSM.6.dylib in Frameworks */,
+				21BD849A14E4B66400ACC45F /* libX11.6.dylib in Frameworks */,
+				21BD849B14E4B66400ACC45F /* libX11.6.dylib in Frameworks */,
+				21BD849C14E4B66400ACC45F /* libX11.6.dylib in Frameworks */,
+				21BD849D14E4B66400ACC45F /* libXau.6.dylib in Frameworks */,
+				21BD849E14E4B66400ACC45F /* libXau.6.dylib in Frameworks */,
+				21BD849F14E4B66400ACC45F /* libXau.6.dylib in Frameworks */,
+				21BD84A014E4B66400ACC45F /* libXaw6.6.dylib in Frameworks */,
+				21BD84A114E4B66400ACC45F /* libXaw7.7.dylib in Frameworks */,
+				21BD84A214E4B66400ACC45F /* libXaw8.8.dylib in Frameworks */,
+				21BD84A314E4B66400ACC45F /* libXaw7.7.dylib in Frameworks */,
+				21BD84A414E4B66400ACC45F /* libXaw6.6.dylib in Frameworks */,
+				21BD84A514E4B66400ACC45F /* libXaw6.6.dylib in Frameworks */,
+				21BD84A614E4B66400ACC45F /* libXaw6.6.dylib in Frameworks */,
+				21BD84A714E4B66400ACC45F /* libXaw7.7.dylib in Frameworks */,
+				21BD84A814E4B66400ACC45F /* libXaw7.7.dylib in Frameworks */,
+				21BD84A914E4B66400ACC45F /* libXaw7.7.dylib in Frameworks */,
+				21BD84AA14E4B66400ACC45F /* libXaw8.8.dylib in Frameworks */,
+				21BD84AB14E4B66400ACC45F /* libXaw8.8.dylib in Frameworks */,
+				21BD84AC14E4B66400ACC45F /* libXaw8.8.dylib in Frameworks */,
+				21BD84AD14E4B66400ACC45F /* libxcb-atom.1.dylib in Frameworks */,
+				21BD84AE14E4B66400ACC45F /* libxcb-atom.1.dylib in Frameworks */,
+				21BD84AF14E4B66400ACC45F /* libxcb-atom.1.dylib in Frameworks */,
+				21BD84B014E4B66400ACC45F /* libxcb-aux.0.dylib in Frameworks */,
+				21BD84B114E4B66400ACC45F /* libxcb-aux.0.dylib in Frameworks */,
+				21BD84B214E4B66400ACC45F /* libxcb-aux.0.dylib in Frameworks */,
+				21BD84B314E4B66400ACC45F /* libxcb-composite.0.dylib in Frameworks */,
+				21BD84B414E4B66400ACC45F /* libxcb-composite.0.dylib in Frameworks */,
+				21BD84B514E4B66400ACC45F /* libxcb-composite.0.dylib in Frameworks */,
+				21BD84B614E4B66400ACC45F /* libxcb-damage.0.dylib in Frameworks */,
+				21BD84B714E4B66400ACC45F /* libxcb-damage.0.dylib in Frameworks */,
+				21BD84B814E4B66400ACC45F /* libxcb-damage.0.dylib in Frameworks */,
+				21BD84B914E4B66400ACC45F /* libxcb-dpms.0.dylib in Frameworks */,
+				21BD84BA14E4B66400ACC45F /* libxcb-dpms.0.dylib in Frameworks */,
+				21BD84BB14E4B66400ACC45F /* libxcb-dpms.0.dylib in Frameworks */,
+				21BD84BC14E4B66400ACC45F /* libxcb-event.1.dylib in Frameworks */,
+				21BD84BD14E4B66400ACC45F /* libxcb-event.1.dylib in Frameworks */,
+				21BD84BE14E4B66400ACC45F /* libxcb-event.1.dylib in Frameworks */,
+				21BD84BF14E4B66400ACC45F /* libxcb-glx.0.dylib in Frameworks */,
+				21BD84C014E4B66400ACC45F /* libxcb-glx.0.dylib in Frameworks */,
+				21BD84C114E4B66400ACC45F /* libxcb-glx.0.dylib in Frameworks */,
+				21BD84C214E4B66400ACC45F /* libxcb-icccm.1.dylib in Frameworks */,
+				21BD84C314E4B66400ACC45F /* libxcb-icccm.1.dylib in Frameworks */,
+				21BD84C414E4B66400ACC45F /* libxcb-icccm.1.dylib in Frameworks */,
+				21BD84C514E4B66400ACC45F /* libxcb-image.0.dylib in Frameworks */,
+				21BD84C614E4B66400ACC45F /* libxcb-image.0.dylib in Frameworks */,
+				21BD84C714E4B66400ACC45F /* libxcb-image.0.dylib in Frameworks */,
+				21BD84C814E4B66400ACC45F /* libxcb-keysyms.0.dylib in Frameworks */,
+				21BD84C914E4B66400ACC45F /* libxcb-keysyms.0.dylib in Frameworks */,
+				21BD84CA14E4B66400ACC45F /* libxcb-keysyms.0.dylib in Frameworks */,
+				21BD84CB14E4B66400ACC45F /* libxcb-property.1.dylib in Frameworks */,
+				21BD84CC14E4B66400ACC45F /* libxcb-property.1.dylib in Frameworks */,
+				21BD84CD14E4B66400ACC45F /* libxcb-property.1.dylib in Frameworks */,
+				21BD84CE14E4B66400ACC45F /* libxcb-randr.0.dylib in Frameworks */,
+				21BD84CF14E4B66400ACC45F /* libxcb-randr.0.dylib in Frameworks */,
+				21BD84D014E4B66400ACC45F /* libxcb-randr.0.dylib in Frameworks */,
+				21BD84D114E4B66400ACC45F /* libxcb-record.0.dylib in Frameworks */,
+				21BD84D214E4B66400ACC45F /* libxcb-record.0.dylib in Frameworks */,
+				21BD84D314E4B66400ACC45F /* libxcb-record.0.dylib in Frameworks */,
+				21BD84D414E4B66400ACC45F /* libxcb-render-util.0.dylib in Frameworks */,
+				21BD84D514E4B66400ACC45F /* libxcb-render-util.0.dylib in Frameworks */,
+				21BD84D614E4B66400ACC45F /* libxcb-render-util.0.dylib in Frameworks */,
+				21BD84D714E4B66400ACC45F /* libxcb-render.0.dylib in Frameworks */,
+				21BD84D814E4B66400ACC45F /* libxcb-render.0.dylib in Frameworks */,
+				21BD84D914E4B66400ACC45F /* libxcb-render.0.dylib in Frameworks */,
+				21BD84DA14E4B66400ACC45F /* libxcb-reply.1.dylib in Frameworks */,
+				21BD84DB14E4B66400ACC45F /* libxcb-reply.1.dylib in Frameworks */,
+				21BD84DC14E4B66400ACC45F /* libxcb-reply.1.dylib in Frameworks */,
+				21BD84DD14E4B66400ACC45F /* libxcb-res.0.dylib in Frameworks */,
+				21BD84DE14E4B66400ACC45F /* libxcb-res.0.dylib in Frameworks */,
+				21BD84DF14E4B66400ACC45F /* libxcb-res.0.dylib in Frameworks */,
+				21BD84E014E4B66400ACC45F /* libxcb-screensaver.0.dylib in Frameworks */,
+				21BD84E114E4B66400ACC45F /* libxcb-screensaver.0.dylib in Frameworks */,
+				21BD84E214E4B66400ACC45F /* libxcb-screensaver.0.dylib in Frameworks */,
+				21BD84E314E4B66400ACC45F /* libxcb-shape.0.dylib in Frameworks */,
+				21BD84E414E4B66400ACC45F /* libxcb-shape.0.dylib in Frameworks */,
+				21BD84E514E4B66400ACC45F /* libxcb-shape.0.dylib in Frameworks */,
+				21BD84E614E4B66400ACC45F /* libxcb-shm.0.dylib in Frameworks */,
+				21BD84E714E4B66400ACC45F /* libxcb-shm.0.dylib in Frameworks */,
+				21BD84E814E4B66400ACC45F /* libxcb-shm.0.dylib in Frameworks */,
+				21BD84E914E4B66400ACC45F /* libxcb-sync.0.dylib in Frameworks */,
+				21BD84EA14E4B66400ACC45F /* libxcb-sync.0.dylib in Frameworks */,
+				21BD84EB14E4B66400ACC45F /* libxcb-sync.0.dylib in Frameworks */,
+				21BD84EC14E4B66400ACC45F /* libxcb-wm.0.dylib in Frameworks */,
+				21BD84ED14E4B66400ACC45F /* libxcb-wm.0.dylib in Frameworks */,
+				21BD84EE14E4B66400ACC45F /* libxcb-wm.0.dylib in Frameworks */,
+				21BD84EF14E4B66400ACC45F /* libxcb-xevie.0.dylib in Frameworks */,
+				21BD84F014E4B66400ACC45F /* libxcb-xevie.0.dylib in Frameworks */,
+				21BD84F114E4B66400ACC45F /* libxcb-xevie.0.dylib in Frameworks */,
+				21BD84F214E4B66400ACC45F /* libxcb-xf86dri.0.dylib in Frameworks */,
+				21BD84F314E4B66400ACC45F /* libxcb-xf86dri.0.dylib in Frameworks */,
+				21BD84F414E4B66400ACC45F /* libxcb-xf86dri.0.dylib in Frameworks */,
+				21BD84F514E4B66400ACC45F /* libxcb-xfixes.0.dylib in Frameworks */,
+				21BD84F614E4B66400ACC45F /* libxcb-xfixes.0.dylib in Frameworks */,
+				21BD84F714E4B66400ACC45F /* libxcb-xfixes.0.dylib in Frameworks */,
+				21BD84F814E4B66400ACC45F /* libxcb-xinerama.0.dylib in Frameworks */,
+				21BD84F914E4B66400ACC45F /* libxcb-xinerama.0.dylib in Frameworks */,
+				21BD84FA14E4B66400ACC45F /* libxcb-xinerama.0.dylib in Frameworks */,
+				21BD84FB14E4B66400ACC45F /* libxcb-xprint.0.dylib in Frameworks */,
+				21BD84FC14E4B66400ACC45F /* libxcb-xprint.0.dylib in Frameworks */,
+				21BD84FD14E4B66400ACC45F /* libxcb-xprint.0.dylib in Frameworks */,
+				21BD84FE14E4B66400ACC45F /* libxcb-xtest.0.dylib in Frameworks */,
+				21BD84FF14E4B66400ACC45F /* libxcb-xtest.0.dylib in Frameworks */,
+				21BD850014E4B66400ACC45F /* libxcb-xtest.0.dylib in Frameworks */,
+				21BD850114E4B66400ACC45F /* libxcb-xv.0.dylib in Frameworks */,
+				21BD850214E4B66400ACC45F /* libxcb-xv.0.dylib in Frameworks */,
+				21BD850314E4B66400ACC45F /* libxcb-xv.0.dylib in Frameworks */,
+				21BD850414E4B66400ACC45F /* libxcb-xvmc.0.dylib in Frameworks */,
+				21BD850514E4B66400ACC45F /* libxcb-xvmc.0.dylib in Frameworks */,
+				21BD850614E4B66400ACC45F /* libxcb-xvmc.0.dylib in Frameworks */,
+				21BD850714E4B66400ACC45F /* libxcb.1.dylib in Frameworks */,
+				21BD850814E4B66400ACC45F /* libxcb.1.dylib in Frameworks */,
+				21BD850914E4B66400ACC45F /* libxcb.1.dylib in Frameworks */,
+				21BD850A14E4B66400ACC45F /* libXcomposite.1.dylib in Frameworks */,
+				21BD850B14E4B66400ACC45F /* libXcomposite.1.dylib in Frameworks */,
+				21BD850C14E4B66400ACC45F /* libXcomposite.1.dylib in Frameworks */,
+				21BD850D14E4B66400ACC45F /* libXcursor.1.dylib in Frameworks */,
+				21BD850E14E4B66400ACC45F /* libXcursor.1.dylib in Frameworks */,
+				21BD850F14E4B66400ACC45F /* libXcursor.1.dylib in Frameworks */,
+				21BD851014E4B66400ACC45F /* libXdamage.1.dylib in Frameworks */,
+				21BD851114E4B66400ACC45F /* libXdamage.1.dylib in Frameworks */,
+				21BD851214E4B66400ACC45F /* libXdamage.1.dylib in Frameworks */,
+				21BD851314E4B66400ACC45F /* libXdmcp.6.dylib in Frameworks */,
+				21BD851414E4B66400ACC45F /* libXdmcp.6.dylib in Frameworks */,
+				21BD851514E4B66400ACC45F /* libXdmcp.6.dylib in Frameworks */,
+				21BD851614E4B66400ACC45F /* libXevie.1.dylib in Frameworks */,
+				21BD851714E4B66400ACC45F /* libXevie.1.dylib in Frameworks */,
+				21BD851814E4B66400ACC45F /* libXevie.1.dylib in Frameworks */,
+				21BD851914E4B66400ACC45F /* libXext.6.dylib in Frameworks */,
+				21BD851A14E4B66500ACC45F /* libXext.6.dylib in Frameworks */,
+				21BD851B14E4B66500ACC45F /* libXext.6.dylib in Frameworks */,
+				21BD851C14E4B66500ACC45F /* libXfixes.3.dylib in Frameworks */,
+				21BD851D14E4B66500ACC45F /* libXfixes.3.dylib in Frameworks */,
+				21BD851E14E4B66500ACC45F /* libXfixes.3.dylib in Frameworks */,
+				21BD851F14E4B66500ACC45F /* libXfont.1.dylib in Frameworks */,
+				21BD852014E4B66500ACC45F /* libXfont.1.dylib in Frameworks */,
+				21BD852114E4B66500ACC45F /* libXfont.1.dylib in Frameworks */,
+				21BD852214E4B66500ACC45F /* libXfontcache.1.dylib in Frameworks */,
+				21BD852314E4B66500ACC45F /* libXfontcache.1.dylib in Frameworks */,
+				21BD852414E4B66500ACC45F /* libXfontcache.1.dylib in Frameworks */,
+				21BD852514E4B66500ACC45F /* libXft.2.dylib in Frameworks */,
+				21BD852614E4B66500ACC45F /* libXft.2.dylib in Frameworks */,
+				21BD852714E4B66500ACC45F /* libXft.2.dylib in Frameworks */,
+				21BD852814E4B66500ACC45F /* libXi.6.dylib in Frameworks */,
+				21BD852914E4B66500ACC45F /* libXi.6.dylib in Frameworks */,
+				21BD852A14E4B66500ACC45F /* libXi.6.dylib in Frameworks */,
+				21BD852B14E4B66500ACC45F /* libXinerama.1.dylib in Frameworks */,
+				21BD852C14E4B66500ACC45F /* libXinerama.1.dylib in Frameworks */,
+				21BD852D14E4B66500ACC45F /* libXinerama.1.dylib in Frameworks */,
+				21BD852E14E4B66500ACC45F /* libxkbfile.1.dylib in Frameworks */,
+				21BD852F14E4B66500ACC45F /* libxkbfile.1.dylib in Frameworks */,
+				21BD853014E4B66500ACC45F /* libxkbfile.1.dylib in Frameworks */,
+				21BD853114E4B66500ACC45F /* libxkbui.1.dylib in Frameworks */,
+				21BD853214E4B66500ACC45F /* libxkbui.1.dylib in Frameworks */,
+				21BD853314E4B66500ACC45F /* libxkbui.1.dylib in Frameworks */,
+				21BD853414E4B66500ACC45F /* libXmu.6.dylib in Frameworks */,
+				21BD853514E4B66500ACC45F /* libXmu.6.dylib in Frameworks */,
+				21BD853614E4B66500ACC45F /* libXmu.6.dylib in Frameworks */,
+				21BD853714E4B66500ACC45F /* libXmuu.1.dylib in Frameworks */,
+				21BD853814E4B66500ACC45F /* libXmuu.1.dylib in Frameworks */,
+				21BD853914E4B66500ACC45F /* libXmuu.1.dylib in Frameworks */,
+				21BD853A14E4B66500ACC45F /* libXp.6.dylib in Frameworks */,
+				21BD853B14E4B66500ACC45F /* libXp.6.dylib in Frameworks */,
+				21BD853C14E4B66500ACC45F /* libXp.6.dylib in Frameworks */,
+				21BD853D14E4B66500ACC45F /* libXpm.4.dylib in Frameworks */,
+				21BD853E14E4B66500ACC45F /* libXpm.4.dylib in Frameworks */,
+				21BD853F14E4B66500ACC45F /* libXpm.4.dylib in Frameworks */,
+				21BD854014E4B66500ACC45F /* libXprintAppUtil.1.dylib in Frameworks */,
+				21BD854114E4B66500ACC45F /* libXprintAppUtil.1.dylib in Frameworks */,
+				21BD854214E4B66500ACC45F /* libXprintAppUtil.1.dylib in Frameworks */,
+				21BD854314E4B66500ACC45F /* libXprintUtil.1.dylib in Frameworks */,
+				21BD854414E4B66500ACC45F /* libXprintUtil.1.dylib in Frameworks */,
+				21BD854514E4B66500ACC45F /* libXprintUtil.1.dylib in Frameworks */,
+				21BD854614E4B66500ACC45F /* libXrandr.2.dylib in Frameworks */,
+				21BD854714E4B66500ACC45F /* libXrandr.2.dylib in Frameworks */,
+				21BD854814E4B66500ACC45F /* libXrandr.2.dylib in Frameworks */,
+				21BD854914E4B66500ACC45F /* libXrender.1.dylib in Frameworks */,
+				21BD854A14E4B66500ACC45F /* libXrender.1.dylib in Frameworks */,
+				21BD854B14E4B66500ACC45F /* libXrender.1.dylib in Frameworks */,
+				21BD854C14E4B66500ACC45F /* libXRes.1.dylib in Frameworks */,
+				21BD854D14E4B66500ACC45F /* libXRes.1.dylib in Frameworks */,
+				21BD854E14E4B66500ACC45F /* libXRes.1.dylib in Frameworks */,
+				21BD854F14E4B66500ACC45F /* libXss.1.dylib in Frameworks */,
+				21BD855014E4B66500ACC45F /* libXss.1.dylib in Frameworks */,
+				21BD855114E4B66500ACC45F /* libXss.1.dylib in Frameworks */,
+				21BD855214E4B66500ACC45F /* libXt.6.dylib in Frameworks */,
+				21BD855314E4B66500ACC45F /* libXt.6.dylib in Frameworks */,
+				21BD855414E4B66500ACC45F /* libXt.6.dylib in Frameworks */,
+				21BD855514E4B66500ACC45F /* libXTrap.6.dylib in Frameworks */,
+				21BD855614E4B66500ACC45F /* libXTrap.6.dylib in Frameworks */,
+				21BD855714E4B66500ACC45F /* libXTrap.6.dylib in Frameworks */,
+				21BD855814E4B66500ACC45F /* libXtst.6.dylib in Frameworks */,
+				21BD855914E4B66500ACC45F /* libXtst.6.dylib in Frameworks */,
+				21BD855A14E4B66500ACC45F /* libXtst.6.dylib in Frameworks */,
+				21BD855B14E4B66500ACC45F /* libXv.1.dylib in Frameworks */,
+				21BD855C14E4B66500ACC45F /* libXv.1.dylib in Frameworks */,
+				21BD855D14E4B66500ACC45F /* libXv.1.dylib in Frameworks */,
+				21BD855E14E4B66500ACC45F /* libXvMC.1.dylib in Frameworks */,
+				21BD855F14E4B66500ACC45F /* libXvMC.1.dylib in Frameworks */,
+				21BD856014E4B66500ACC45F /* libXvMC.1.dylib in Frameworks */,
+				21BD856114E4B66500ACC45F /* libXvMCW.1.dylib in Frameworks */,
+				21BD856214E4B66500ACC45F /* libXvMCW.1.dylib in Frameworks */,
+				21BD856314E4B66500ACC45F /* libXvMCW.1.dylib in Frameworks */,
+				21BD856414E4B66500ACC45F /* libXxf86misc.1.dylib in Frameworks */,
+				21BD856514E4B66500ACC45F /* libXxf86misc.1.dylib in Frameworks */,
+				21BD856614E4B66500ACC45F /* libXxf86misc.1.dylib in Frameworks */,
+				21BD856714E4B66500ACC45F /* libXxf86vm.1.dylib in Frameworks */,
+				21BD856814E4B66500ACC45F /* libXxf86vm.1.dylib in Frameworks */,
+				21BD856914E4B66500ACC45F /* libXxf86vm.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +824,7 @@
 		21BD6B6914E4B05900ACC45F = {
 			isa = PBXGroup;
 			children = (
+				21BD856B14E4B68800ACC45F /* lib */,
 				21BD6B7714E4B05900ACC45F /* xbeizer */,
 				21BD6B7514E4B05900ACC45F /* Products */,
 			);
@@ -60,13 +841,304 @@
 		21BD6B7714E4B05900ACC45F /* xbeizer */ = {
 			isa = PBXGroup;
 			children = (
+				21BD856C14E4BD2700ACC45F /* xbeizer.h */,
 				21BD6B7814E4B05900ACC45F /* main.c */,
 				21BD6B7A14E4B05900ACC45F /* xbeizer.1 */,
 			);
 			path = xbeizer;
 			sourceTree = "<group>";
 		};
+		21BD856A14E4B67200ACC45F /* X11 */ = {
+			isa = PBXGroup;
+			children = (
+				21BD835A14E4B66400ACC45F /* libAppleWM.7.dylib */,
+				21BD835B14E4B66400ACC45F /* libAppleWM.7.dylib */,
+				21BD835C14E4B66400ACC45F /* libAppleWM.7.dylib */,
+				21BD835D14E4B66400ACC45F /* libcairo.2.dylib */,
+				21BD835E14E4B66400ACC45F /* libcairo.2.dylib */,
+				21BD835F14E4B66400ACC45F /* libdmx.1.dylib */,
+				21BD836014E4B66400ACC45F /* libdmx.1.dylib */,
+				21BD836114E4B66400ACC45F /* libdmx.1.dylib */,
+				21BD836214E4B66400ACC45F /* libfontconfig.1.dylib */,
+				21BD836314E4B66400ACC45F /* libfontconfig.1.dylib */,
+				21BD836414E4B66400ACC45F /* libfontconfig.1.dylib */,
+				21BD836514E4B66400ACC45F /* libfontenc.1.dylib */,
+				21BD836614E4B66400ACC45F /* libfontenc.1.dylib */,
+				21BD836714E4B66400ACC45F /* libfontenc.1.dylib */,
+				21BD836814E4B66400ACC45F /* libfreetype.6.dylib */,
+				21BD836914E4B66400ACC45F /* libfreetype.6.dylib */,
+				21BD836A14E4B66400ACC45F /* libFS.6.dylib */,
+				21BD836B14E4B66400ACC45F /* libFS.6.dylib */,
+				21BD836C14E4B66400ACC45F /* libFS.6.dylib */,
+				21BD836D14E4B66400ACC45F /* libGL.1.2.dylib */,
+				21BD836E14E4B66400ACC45F /* libGL.1.2.dylib */,
+				21BD836F14E4B66400ACC45F /* libGL.1.2.dylib */,
+				21BD837014E4B66400ACC45F /* libGLU.1.3.dylib */,
+				21BD837114E4B66400ACC45F /* libGLU.1.3.dylib */,
+				21BD837214E4B66400ACC45F /* libGLU.1.3.dylib */,
+				21BD837314E4B66400ACC45F /* libglut.3.7.dylib */,
+				21BD837414E4B66400ACC45F /* libglut.3.7.dylib */,
+				21BD837514E4B66400ACC45F /* libglut.3.7.dylib */,
+				21BD837614E4B66400ACC45F /* libICE.6.dylib */,
+				21BD837714E4B66400ACC45F /* libICE.6.dylib */,
+				21BD837814E4B66400ACC45F /* libICE.6.dylib */,
+				21BD837914E4B66400ACC45F /* liblbxutil.1.dylib */,
+				21BD837A14E4B66400ACC45F /* liblbxutil.1.dylib */,
+				21BD837B14E4B66400ACC45F /* liblbxutil.1.dylib */,
+				21BD837C14E4B66400ACC45F /* liboldX.6.dylib */,
+				21BD837D14E4B66400ACC45F /* liboldX.6.dylib */,
+				21BD837E14E4B66400ACC45F /* liboldX.6.dylib */,
+				21BD837F14E4B66400ACC45F /* libOSMesa.7.2.dylib */,
+				21BD838014E4B66400ACC45F /* libOSMesa.7.2.dylib */,
+				21BD838114E4B66400ACC45F /* libOSMesa.7.2.dylib */,
+				21BD838214E4B66400ACC45F /* libpixman-1.0.dylib */,
+				21BD838314E4B66400ACC45F /* libpixman-1.0.dylib */,
+				21BD838414E4B66400ACC45F /* libpixman-1.0.dylib */,
+				21BD838514E4B66400ACC45F /* libpng.3.dylib */,
+				21BD838614E4B66400ACC45F /* libpng.3.dylib */,
+				21BD838714E4B66400ACC45F /* libpng.3.dylib */,
+				21BD838814E4B66400ACC45F /* libpng.3.dylib */,
+				21BD838914E4B66400ACC45F /* libpng12.0.dylib */,
+				21BD838A14E4B66400ACC45F /* libpng12.0.dylib */,
+				21BD838B14E4B66400ACC45F /* libpng12.0.dylib */,
+				21BD838C14E4B66400ACC45F /* libpng12.0.dylib */,
+				21BD838D14E4B66400ACC45F /* libpng12.0.dylib */,
+				21BD838E14E4B66400ACC45F /* libpng12.0.dylib */,
+				21BD838F14E4B66400ACC45F /* libSM.6.dylib */,
+				21BD839014E4B66400ACC45F /* libSM.6.dylib */,
+				21BD839114E4B66400ACC45F /* libSM.6.dylib */,
+				21BD839214E4B66400ACC45F /* libX11.6.dylib */,
+				21BD839314E4B66400ACC45F /* libX11.6.dylib */,
+				21BD839414E4B66400ACC45F /* libX11.6.dylib */,
+				21BD839514E4B66400ACC45F /* libXau.6.dylib */,
+				21BD839614E4B66400ACC45F /* libXau.6.dylib */,
+				21BD839714E4B66400ACC45F /* libXau.6.dylib */,
+				21BD839814E4B66400ACC45F /* libXaw6.6.dylib */,
+				21BD839914E4B66400ACC45F /* libXaw7.7.dylib */,
+				21BD839A14E4B66400ACC45F /* libXaw8.8.dylib */,
+				21BD839B14E4B66400ACC45F /* libXaw7.7.dylib */,
+				21BD839C14E4B66400ACC45F /* libXaw6.6.dylib */,
+				21BD839D14E4B66400ACC45F /* libXaw6.6.dylib */,
+				21BD839E14E4B66400ACC45F /* libXaw6.6.dylib */,
+				21BD839F14E4B66400ACC45F /* libXaw7.7.dylib */,
+				21BD83A014E4B66400ACC45F /* libXaw7.7.dylib */,
+				21BD83A114E4B66400ACC45F /* libXaw7.7.dylib */,
+				21BD83A214E4B66400ACC45F /* libXaw8.8.dylib */,
+				21BD83A314E4B66400ACC45F /* libXaw8.8.dylib */,
+				21BD83A414E4B66400ACC45F /* libXaw8.8.dylib */,
+				21BD83A514E4B66400ACC45F /* libxcb-atom.1.dylib */,
+				21BD83A614E4B66400ACC45F /* libxcb-atom.1.dylib */,
+				21BD83A714E4B66400ACC45F /* libxcb-atom.1.dylib */,
+				21BD83A814E4B66400ACC45F /* libxcb-aux.0.dylib */,
+				21BD83A914E4B66400ACC45F /* libxcb-aux.0.dylib */,
+				21BD83AA14E4B66400ACC45F /* libxcb-aux.0.dylib */,
+				21BD83AB14E4B66400ACC45F /* libxcb-composite.0.dylib */,
+				21BD83AC14E4B66400ACC45F /* libxcb-composite.0.dylib */,
+				21BD83AD14E4B66400ACC45F /* libxcb-composite.0.dylib */,
+				21BD83AE14E4B66400ACC45F /* libxcb-damage.0.dylib */,
+				21BD83AF14E4B66400ACC45F /* libxcb-damage.0.dylib */,
+				21BD83B014E4B66400ACC45F /* libxcb-damage.0.dylib */,
+				21BD83B114E4B66400ACC45F /* libxcb-dpms.0.dylib */,
+				21BD83B214E4B66400ACC45F /* libxcb-dpms.0.dylib */,
+				21BD83B314E4B66400ACC45F /* libxcb-dpms.0.dylib */,
+				21BD83B414E4B66400ACC45F /* libxcb-event.1.dylib */,
+				21BD83B514E4B66400ACC45F /* libxcb-event.1.dylib */,
+				21BD83B614E4B66400ACC45F /* libxcb-event.1.dylib */,
+				21BD83B714E4B66400ACC45F /* libxcb-glx.0.dylib */,
+				21BD83B814E4B66400ACC45F /* libxcb-glx.0.dylib */,
+				21BD83B914E4B66400ACC45F /* libxcb-glx.0.dylib */,
+				21BD83BA14E4B66400ACC45F /* libxcb-icccm.1.dylib */,
+				21BD83BB14E4B66400ACC45F /* libxcb-icccm.1.dylib */,
+				21BD83BC14E4B66400ACC45F /* libxcb-icccm.1.dylib */,
+				21BD83BD14E4B66400ACC45F /* libxcb-image.0.dylib */,
+				21BD83BE14E4B66400ACC45F /* libxcb-image.0.dylib */,
+				21BD83BF14E4B66400ACC45F /* libxcb-image.0.dylib */,
+				21BD83C014E4B66400ACC45F /* libxcb-keysyms.0.dylib */,
+				21BD83C114E4B66400ACC45F /* libxcb-keysyms.0.dylib */,
+				21BD83C214E4B66400ACC45F /* libxcb-keysyms.0.dylib */,
+				21BD83C314E4B66400ACC45F /* libxcb-property.1.dylib */,
+				21BD83C414E4B66400ACC45F /* libxcb-property.1.dylib */,
+				21BD83C514E4B66400ACC45F /* libxcb-property.1.dylib */,
+				21BD83C614E4B66400ACC45F /* libxcb-randr.0.dylib */,
+				21BD83C714E4B66400ACC45F /* libxcb-randr.0.dylib */,
+				21BD83C814E4B66400ACC45F /* libxcb-randr.0.dylib */,
+				21BD83C914E4B66400ACC45F /* libxcb-record.0.dylib */,
+				21BD83CA14E4B66400ACC45F /* libxcb-record.0.dylib */,
+				21BD83CB14E4B66400ACC45F /* libxcb-record.0.dylib */,
+				21BD83CC14E4B66400ACC45F /* libxcb-render-util.0.dylib */,
+				21BD83CD14E4B66400ACC45F /* libxcb-render-util.0.dylib */,
+				21BD83CE14E4B66400ACC45F /* libxcb-render-util.0.dylib */,
+				21BD83CF14E4B66400ACC45F /* libxcb-render.0.dylib */,
+				21BD83D014E4B66400ACC45F /* libxcb-render.0.dylib */,
+				21BD83D114E4B66400ACC45F /* libxcb-render.0.dylib */,
+				21BD83D214E4B66400ACC45F /* libxcb-reply.1.dylib */,
+				21BD83D314E4B66400ACC45F /* libxcb-reply.1.dylib */,
+				21BD83D414E4B66400ACC45F /* libxcb-reply.1.dylib */,
+				21BD83D514E4B66400ACC45F /* libxcb-res.0.dylib */,
+				21BD83D614E4B66400ACC45F /* libxcb-res.0.dylib */,
+				21BD83D714E4B66400ACC45F /* libxcb-res.0.dylib */,
+				21BD83D814E4B66400ACC45F /* libxcb-screensaver.0.dylib */,
+				21BD83D914E4B66400ACC45F /* libxcb-screensaver.0.dylib */,
+				21BD83DA14E4B66400ACC45F /* libxcb-screensaver.0.dylib */,
+				21BD83DB14E4B66400ACC45F /* libxcb-shape.0.dylib */,
+				21BD83DC14E4B66400ACC45F /* libxcb-shape.0.dylib */,
+				21BD83DD14E4B66400ACC45F /* libxcb-shape.0.dylib */,
+				21BD83DE14E4B66400ACC45F /* libxcb-shm.0.dylib */,
+				21BD83DF14E4B66400ACC45F /* libxcb-shm.0.dylib */,
+				21BD83E014E4B66400ACC45F /* libxcb-shm.0.dylib */,
+				21BD83E114E4B66400ACC45F /* libxcb-sync.0.dylib */,
+				21BD83E214E4B66400ACC45F /* libxcb-sync.0.dylib */,
+				21BD83E314E4B66400ACC45F /* libxcb-sync.0.dylib */,
+				21BD83E414E4B66400ACC45F /* libxcb-wm.0.dylib */,
+				21BD83E514E4B66400ACC45F /* libxcb-wm.0.dylib */,
+				21BD83E614E4B66400ACC45F /* libxcb-wm.0.dylib */,
+				21BD83E714E4B66400ACC45F /* libxcb-xevie.0.dylib */,
+				21BD83E814E4B66400ACC45F /* libxcb-xevie.0.dylib */,
+				21BD83E914E4B66400ACC45F /* libxcb-xevie.0.dylib */,
+				21BD83EA14E4B66400ACC45F /* libxcb-xf86dri.0.dylib */,
+				21BD83EB14E4B66400ACC45F /* libxcb-xf86dri.0.dylib */,
+				21BD83EC14E4B66400ACC45F /* libxcb-xf86dri.0.dylib */,
+				21BD83ED14E4B66400ACC45F /* libxcb-xfixes.0.dylib */,
+				21BD83EE14E4B66400ACC45F /* libxcb-xfixes.0.dylib */,
+				21BD83EF14E4B66400ACC45F /* libxcb-xfixes.0.dylib */,
+				21BD83F014E4B66400ACC45F /* libxcb-xinerama.0.dylib */,
+				21BD83F114E4B66400ACC45F /* libxcb-xinerama.0.dylib */,
+				21BD83F214E4B66400ACC45F /* libxcb-xinerama.0.dylib */,
+				21BD83F314E4B66400ACC45F /* libxcb-xprint.0.dylib */,
+				21BD83F414E4B66400ACC45F /* libxcb-xprint.0.dylib */,
+				21BD83F514E4B66400ACC45F /* libxcb-xprint.0.dylib */,
+				21BD83F614E4B66400ACC45F /* libxcb-xtest.0.dylib */,
+				21BD83F714E4B66400ACC45F /* libxcb-xtest.0.dylib */,
+				21BD83F814E4B66400ACC45F /* libxcb-xtest.0.dylib */,
+				21BD83F914E4B66400ACC45F /* libxcb-xv.0.dylib */,
+				21BD83FA14E4B66400ACC45F /* libxcb-xv.0.dylib */,
+				21BD83FB14E4B66400ACC45F /* libxcb-xv.0.dylib */,
+				21BD83FC14E4B66400ACC45F /* libxcb-xvmc.0.dylib */,
+				21BD83FD14E4B66400ACC45F /* libxcb-xvmc.0.dylib */,
+				21BD83FE14E4B66400ACC45F /* libxcb-xvmc.0.dylib */,
+				21BD83FF14E4B66400ACC45F /* libxcb.1.dylib */,
+				21BD840014E4B66400ACC45F /* libxcb.1.dylib */,
+				21BD840114E4B66400ACC45F /* libxcb.1.dylib */,
+				21BD840214E4B66400ACC45F /* libXcomposite.1.dylib */,
+				21BD840314E4B66400ACC45F /* libXcomposite.1.dylib */,
+				21BD840414E4B66400ACC45F /* libXcomposite.1.dylib */,
+				21BD840514E4B66400ACC45F /* libXcursor.1.dylib */,
+				21BD840614E4B66400ACC45F /* libXcursor.1.dylib */,
+				21BD840714E4B66400ACC45F /* libXcursor.1.dylib */,
+				21BD840814E4B66400ACC45F /* libXdamage.1.dylib */,
+				21BD840914E4B66400ACC45F /* libXdamage.1.dylib */,
+				21BD840A14E4B66400ACC45F /* libXdamage.1.dylib */,
+				21BD840B14E4B66400ACC45F /* libXdmcp.6.dylib */,
+				21BD840C14E4B66400ACC45F /* libXdmcp.6.dylib */,
+				21BD840D14E4B66400ACC45F /* libXdmcp.6.dylib */,
+				21BD840E14E4B66400ACC45F /* libXevie.1.dylib */,
+				21BD840F14E4B66400ACC45F /* libXevie.1.dylib */,
+				21BD841014E4B66400ACC45F /* libXevie.1.dylib */,
+				21BD841114E4B66400ACC45F /* libXext.6.dylib */,
+				21BD841214E4B66400ACC45F /* libXext.6.dylib */,
+				21BD841314E4B66400ACC45F /* libXext.6.dylib */,
+				21BD841414E4B66400ACC45F /* libXfixes.3.dylib */,
+				21BD841514E4B66400ACC45F /* libXfixes.3.dylib */,
+				21BD841614E4B66400ACC45F /* libXfixes.3.dylib */,
+				21BD841714E4B66400ACC45F /* libXfont.1.dylib */,
+				21BD841814E4B66400ACC45F /* libXfont.1.dylib */,
+				21BD841914E4B66400ACC45F /* libXfont.1.dylib */,
+				21BD841A14E4B66400ACC45F /* libXfontcache.1.dylib */,
+				21BD841B14E4B66400ACC45F /* libXfontcache.1.dylib */,
+				21BD841C14E4B66400ACC45F /* libXfontcache.1.dylib */,
+				21BD841D14E4B66400ACC45F /* libXft.2.dylib */,
+				21BD841E14E4B66400ACC45F /* libXft.2.dylib */,
+				21BD841F14E4B66400ACC45F /* libXft.2.dylib */,
+				21BD842014E4B66400ACC45F /* libXi.6.dylib */,
+				21BD842114E4B66400ACC45F /* libXi.6.dylib */,
+				21BD842214E4B66400ACC45F /* libXi.6.dylib */,
+				21BD842314E4B66400ACC45F /* libXinerama.1.dylib */,
+				21BD842414E4B66400ACC45F /* libXinerama.1.dylib */,
+				21BD842514E4B66400ACC45F /* libXinerama.1.dylib */,
+				21BD842614E4B66400ACC45F /* libxkbfile.1.dylib */,
+				21BD842714E4B66400ACC45F /* libxkbfile.1.dylib */,
+				21BD842814E4B66400ACC45F /* libxkbfile.1.dylib */,
+				21BD842914E4B66400ACC45F /* libxkbui.1.dylib */,
+				21BD842A14E4B66400ACC45F /* libxkbui.1.dylib */,
+				21BD842B14E4B66400ACC45F /* libxkbui.1.dylib */,
+				21BD842C14E4B66400ACC45F /* libXmu.6.dylib */,
+				21BD842D14E4B66400ACC45F /* libXmu.6.dylib */,
+				21BD842E14E4B66400ACC45F /* libXmu.6.dylib */,
+				21BD842F14E4B66400ACC45F /* libXmuu.1.dylib */,
+				21BD843014E4B66400ACC45F /* libXmuu.1.dylib */,
+				21BD843114E4B66400ACC45F /* libXmuu.1.dylib */,
+				21BD843214E4B66400ACC45F /* libXp.6.dylib */,
+				21BD843314E4B66400ACC45F /* libXp.6.dylib */,
+				21BD843414E4B66400ACC45F /* libXp.6.dylib */,
+				21BD843514E4B66400ACC45F /* libXpm.4.dylib */,
+				21BD843614E4B66400ACC45F /* libXpm.4.dylib */,
+				21BD843714E4B66400ACC45F /* libXpm.4.dylib */,
+				21BD843814E4B66400ACC45F /* libXprintAppUtil.1.dylib */,
+				21BD843914E4B66400ACC45F /* libXprintAppUtil.1.dylib */,
+				21BD843A14E4B66400ACC45F /* libXprintAppUtil.1.dylib */,
+				21BD843B14E4B66400ACC45F /* libXprintUtil.1.dylib */,
+				21BD843C14E4B66400ACC45F /* libXprintUtil.1.dylib */,
+				21BD843D14E4B66400ACC45F /* libXprintUtil.1.dylib */,
+				21BD843E14E4B66400ACC45F /* libXrandr.2.dylib */,
+				21BD843F14E4B66400ACC45F /* libXrandr.2.dylib */,
+				21BD844014E4B66400ACC45F /* libXrandr.2.dylib */,
+				21BD844114E4B66400ACC45F /* libXrender.1.dylib */,
+				21BD844214E4B66400ACC45F /* libXrender.1.dylib */,
+				21BD844314E4B66400ACC45F /* libXrender.1.dylib */,
+				21BD844414E4B66400ACC45F /* libXRes.1.dylib */,
+				21BD844514E4B66400ACC45F /* libXRes.1.dylib */,
+				21BD844614E4B66400ACC45F /* libXRes.1.dylib */,
+				21BD844714E4B66400ACC45F /* libXss.1.dylib */,
+				21BD844814E4B66400ACC45F /* libXss.1.dylib */,
+				21BD844914E4B66400ACC45F /* libXss.1.dylib */,
+				21BD844A14E4B66400ACC45F /* libXt.6.dylib */,
+				21BD844B14E4B66400ACC45F /* libXt.6.dylib */,
+				21BD844C14E4B66400ACC45F /* libXt.6.dylib */,
+				21BD844D14E4B66400ACC45F /* libXTrap.6.dylib */,
+				21BD844E14E4B66400ACC45F /* libXTrap.6.dylib */,
+				21BD844F14E4B66400ACC45F /* libXTrap.6.dylib */,
+				21BD845014E4B66400ACC45F /* libXtst.6.dylib */,
+				21BD845114E4B66400ACC45F /* libXtst.6.dylib */,
+				21BD845214E4B66400ACC45F /* libXtst.6.dylib */,
+				21BD845314E4B66400ACC45F /* libXv.1.dylib */,
+				21BD845414E4B66400ACC45F /* libXv.1.dylib */,
+				21BD845514E4B66400ACC45F /* libXv.1.dylib */,
+				21BD845614E4B66400ACC45F /* libXvMC.1.dylib */,
+				21BD845714E4B66400ACC45F /* libXvMC.1.dylib */,
+				21BD845814E4B66400ACC45F /* libXvMC.1.dylib */,
+				21BD845914E4B66400ACC45F /* libXvMCW.1.dylib */,
+				21BD845A14E4B66400ACC45F /* libXvMCW.1.dylib */,
+				21BD845B14E4B66400ACC45F /* libXvMCW.1.dylib */,
+				21BD845C14E4B66400ACC45F /* libXxf86misc.1.dylib */,
+				21BD845D14E4B66400ACC45F /* libXxf86misc.1.dylib */,
+				21BD845E14E4B66400ACC45F /* libXxf86misc.1.dylib */,
+				21BD845F14E4B66400ACC45F /* libXxf86vm.1.dylib */,
+				21BD846014E4B66400ACC45F /* libXxf86vm.1.dylib */,
+				21BD846114E4B66400ACC45F /* libXxf86vm.1.dylib */,
+			);
+			name = X11;
+			sourceTree = "<group>";
+		};
+		21BD856B14E4B68800ACC45F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				21BD856A14E4B67200ACC45F /* X11 */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		21BD804F14E4B41700ACC45F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BD856D14E4BD2700ACC45F /* xbeizer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		21BD6B7314E4B05900ACC45F /* xbeizer */ = {
@@ -75,7 +1147,7 @@
 			buildPhases = (
 				21BD6B7014E4B05900ACC45F /* Sources */,
 				21BD6B7114E4B05900ACC45F /* Frameworks */,
-				21BD6B7214E4B05900ACC45F /* CopyFiles */,
+				21BD804F14E4B41700ACC45F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -172,6 +1244,12 @@
 		21BD6B7F14E4B05900ACC45F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/X11/**";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/X11/lib/**",
+					/usr/X11/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -179,6 +1257,12 @@
 		21BD6B8014E4B05900ACC45F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/X11/**";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/X11/lib/**",
+					/usr/X11/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
