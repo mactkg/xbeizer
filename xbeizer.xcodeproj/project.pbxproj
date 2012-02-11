@@ -543,7 +543,7 @@
 		21BD845F14E4B66400ACC45F /* libXxf86vm.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXxf86vm.1.dylib; path = /usr/X11/lib/libXxf86vm.1.dylib; sourceTree = "<absolute>"; };
 		21BD846014E4B66400ACC45F /* libXxf86vm.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXxf86vm.1.dylib; path = /usr/X11/lib/libXxf86vm.1.dylib; sourceTree = "<absolute>"; };
 		21BD846114E4B66400ACC45F /* libXxf86vm.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXxf86vm.1.dylib; path = /usr/X11/lib/libXxf86vm.1.dylib; sourceTree = "<absolute>"; };
-		21BD856C14E4BD2700ACC45F /* xbeizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xbeizer.h; path = /usr/X11/include/X11/../../../../Users/mactkg/Desktop/xwindow/xbeizer.h; sourceTree = "<absolute>"; };
+		21BD856C14E4BD2700ACC45F /* xbeizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xbeizer.h; path = xbeizer/xbeizer.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1286,6 +1286,7 @@
 				21BD6B8014E4B05900ACC45F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
