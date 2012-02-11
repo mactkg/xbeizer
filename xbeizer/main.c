@@ -39,6 +39,7 @@ int main(int argc, char **argv)
 	w = XCreateSimpleWindow(dpy, root, 100, 100, WIDTH, HIGHT, BORDER, black, white);
 	/* Make Sub Window */
 	quit = XCreateSimpleWindow(dpy, w, 10, 3, 30, 12, BORDER, black, white);
+    
 	gc = XCreateGC(dpy, w, 0, NULL);
     
     csr = XCreateFontCursor(dpy, 60);
@@ -66,6 +67,8 @@ int main(int argc, char **argv)
         }
 	}
 }
+
+
 
 //*********************************************
 

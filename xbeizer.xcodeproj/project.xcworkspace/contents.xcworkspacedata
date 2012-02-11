@@ -1,0 +1,1330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:../../../../../usr/X11/include/X11"
+      name = "X11">
+      <FileRef
+         location = "group:../../../../Users/mactkg/Desktop/xwindow/xbeizer.h">
+      </FileRef>
+      <FileRef
+         location = "group:ap_keysym.h">
+      </FileRef>
+      <Group
+         location = "group:bitmaps"
+         name = "bitmaps">
+         <FileRef
+            location = "group:1x1">
+         </FileRef>
+         <FileRef
+            location = "group:2x2">
+         </FileRef>
+         <FileRef
+            location = "group:black">
+         </FileRef>
+         <FileRef
+            location = "group:black6">
+         </FileRef>
+         <FileRef
+            location = "group:box6">
+         </FileRef>
+         <FileRef
+            location = "group:boxes">
+         </FileRef>
+         <FileRef
+            location = "group:calculator">
+         </FileRef>
+         <FileRef
+            location = "group:cntr_ptr">
+         </FileRef>
+         <FileRef
+            location = "group:cntr_ptrmsk">
+         </FileRef>
+         <FileRef
+            location = "group:cross_weave">
+         </FileRef>
+         <FileRef
+            location = "group:Dashes">
+         </FileRef>
+         <FileRef
+            location = "group:dimple1">
+         </FileRef>
+         <FileRef
+            location = "group:dimple3">
+         </FileRef>
+         <FileRef
+            location = "group:dot">
+         </FileRef>
+         <FileRef
+            location = "group:Down">
+         </FileRef>
+         <FileRef
+            location = "group:dropbar7">
+         </FileRef>
+         <FileRef
+            location = "group:dropbar8">
+         </FileRef>
+         <FileRef
+            location = "group:escherknot">
+         </FileRef>
+         <FileRef
+            location = "group:Excl">
+         </FileRef>
+         <FileRef
+            location = "group:flagdown">
+         </FileRef>
+         <FileRef
+            location = "group:flagup">
+         </FileRef>
+         <FileRef
+            location = "group:FlipHoriz">
+         </FileRef>
+         <FileRef
+            location = "group:flipped_gray">
+         </FileRef>
+         <FileRef
+            location = "group:FlipVert">
+         </FileRef>
+         <FileRef
+            location = "group:Fold">
+         </FileRef>
+         <FileRef
+            location = "group:gray">
+         </FileRef>
+         <FileRef
+            location = "group:gray1">
+         </FileRef>
+         <FileRef
+            location = "group:gray3">
+         </FileRef>
+         <FileRef
+            location = "group:grid16">
+         </FileRef>
+         <FileRef
+            location = "group:grid2">
+         </FileRef>
+         <FileRef
+            location = "group:grid4">
+         </FileRef>
+         <FileRef
+            location = "group:grid8">
+         </FileRef>
+         <FileRef
+            location = "group:hlines2">
+         </FileRef>
+         <FileRef
+            location = "group:hlines3">
+         </FileRef>
+         <FileRef
+            location = "group:icon">
+         </FileRef>
+         <FileRef
+            location = "group:keyboard16">
+         </FileRef>
+         <FileRef
+            location = "group:ldblarrow">
+         </FileRef>
+         <FileRef
+            location = "group:Left">
+         </FileRef>
+         <FileRef
+            location = "group:left_ptr">
+         </FileRef>
+         <FileRef
+            location = "group:left_ptrmsk">
+         </FileRef>
+         <FileRef
+            location = "group:letters">
+         </FileRef>
+         <FileRef
+            location = "group:light_gray">
+         </FileRef>
+         <FileRef
+            location = "group:mailempty">
+         </FileRef>
+         <FileRef
+            location = "group:mailemptymsk">
+         </FileRef>
+         <FileRef
+            location = "group:mailfull">
+         </FileRef>
+         <FileRef
+            location = "group:mailfullmsk">
+         </FileRef>
+         <FileRef
+            location = "group:mensetmanus">
+         </FileRef>
+         <FileRef
+            location = "group:menu10">
+         </FileRef>
+         <FileRef
+            location = "group:menu12">
+         </FileRef>
+         <FileRef
+            location = "group:menu16">
+         </FileRef>
+         <FileRef
+            location = "group:menu6">
+         </FileRef>
+         <FileRef
+            location = "group:menu8">
+         </FileRef>
+         <FileRef
+            location = "group:noletters">
+         </FileRef>
+         <FileRef
+            location = "group:opendot">
+         </FileRef>
+         <FileRef
+            location = "group:opendotMask">
+         </FileRef>
+         <FileRef
+            location = "group:plaid">
+         </FileRef>
+         <FileRef
+            location = "group:rdblarrow">
+         </FileRef>
+         <FileRef
+            location = "group:Right">
+         </FileRef>
+         <FileRef
+            location = "group:right_ptr">
+         </FileRef>
+         <FileRef
+            location = "group:right_ptrmsk">
+         </FileRef>
+         <FileRef
+            location = "group:root_weave">
+         </FileRef>
+         <FileRef
+            location = "group:RotateLeft">
+         </FileRef>
+         <FileRef
+            location = "group:RotateRight">
+         </FileRef>
+         <FileRef
+            location = "group:scales">
+         </FileRef>
+         <FileRef
+            location = "group:sipb">
+         </FileRef>
+         <FileRef
+            location = "group:star">
+         </FileRef>
+         <FileRef
+            location = "group:starMask">
+         </FileRef>
+         <FileRef
+            location = "group:Stipple">
+         </FileRef>
+         <FileRef
+            location = "group:target">
+         </FileRef>
+         <FileRef
+            location = "group:Term">
+         </FileRef>
+         <FileRef
+            location = "group:terminal">
+         </FileRef>
+         <FileRef
+            location = "group:tie_fighter">
+         </FileRef>
+         <FileRef
+            location = "group:Up">
+         </FileRef>
+         <FileRef
+            location = "group:vlines2">
+         </FileRef>
+         <FileRef
+            location = "group:vlines3">
+         </FileRef>
+         <FileRef
+            location = "group:weird_size">
+         </FileRef>
+         <FileRef
+            location = "group:wide_weave">
+         </FileRef>
+         <FileRef
+            location = "group:wingdogs">
+         </FileRef>
+         <FileRef
+            location = "group:woman">
+         </FileRef>
+         <FileRef
+            location = "group:xfd_icon">
+         </FileRef>
+         <FileRef
+            location = "group:xlogo11">
+         </FileRef>
+         <FileRef
+            location = "group:xlogo16">
+         </FileRef>
+         <FileRef
+            location = "group:xlogo32">
+         </FileRef>
+         <FileRef
+            location = "group:xlogo64">
+         </FileRef>
+         <FileRef
+            location = "group:xsnow">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:CallbackI.h">
+      </FileRef>
+      <FileRef
+         location = "group:Composite.h">
+      </FileRef>
+      <FileRef
+         location = "group:CompositeP.h">
+      </FileRef>
+      <FileRef
+         location = "group:ConstrainP.h">
+      </FileRef>
+      <FileRef
+         location = "group:Constraint.h">
+      </FileRef>
+      <FileRef
+         location = "group:ConvertI.h">
+      </FileRef>
+      <FileRef
+         location = "group:Core.h">
+      </FileRef>
+      <FileRef
+         location = "group:CoreP.h">
+      </FileRef>
+      <FileRef
+         location = "group:CreateI.h">
+      </FileRef>
+      <FileRef
+         location = "group:cursorfont.h">
+      </FileRef>
+      <FileRef
+         location = "group:DECkeysym.h">
+      </FileRef>
+      <Group
+         location = "group:dri"
+         name = "dri">
+         <FileRef
+            location = "group:xf86dri.h">
+         </FileRef>
+         <FileRef
+            location = "group:xf86dristr.h">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:EventI.h">
+      </FileRef>
+      <Group
+         location = "group:extensions"
+         name = "extensions">
+         <FileRef
+            location = "group:applewm.h">
+         </FileRef>
+         <FileRef
+            location = "group:applewmstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:bigreqstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:composite.h">
+         </FileRef>
+         <FileRef
+            location = "group:compositeproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:damageproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:damagewire.h">
+         </FileRef>
+         <FileRef
+            location = "group:dmxext.h">
+         </FileRef>
+         <FileRef
+            location = "group:dmxproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:dpms.h">
+         </FileRef>
+         <FileRef
+            location = "group:dpmsstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:dri2proto.h">
+         </FileRef>
+         <FileRef
+            location = "group:dri2tokens.h">
+         </FileRef>
+         <FileRef
+            location = "group:extutil.h">
+         </FileRef>
+         <FileRef
+            location = "group:fontcache.h">
+         </FileRef>
+         <FileRef
+            location = "group:fontcacheP.h">
+         </FileRef>
+         <FileRef
+            location = "group:fontcachstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:ge.h">
+         </FileRef>
+         <FileRef
+            location = "group:geproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:lbxbuf.h">
+         </FileRef>
+         <FileRef
+            location = "group:lbxbufstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:lbxdeltastr.h">
+         </FileRef>
+         <FileRef
+            location = "group:lbximage.h">
+         </FileRef>
+         <FileRef
+            location = "group:lbxopts.h">
+         </FileRef>
+         <FileRef
+            location = "group:lbxstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:lbxzlib.h">
+         </FileRef>
+         <FileRef
+            location = "group:MITMisc.h">
+         </FileRef>
+         <FileRef
+            location = "group:mitmiscstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:multibuf.h">
+         </FileRef>
+         <FileRef
+            location = "group:multibufst.h">
+         </FileRef>
+         <FileRef
+            location = "group:panoramiXext.h">
+         </FileRef>
+         <FileRef
+            location = "group:panoramiXproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:Print.h">
+         </FileRef>
+         <FileRef
+            location = "group:Printstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:randr.h">
+         </FileRef>
+         <FileRef
+            location = "group:randrproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:record.h">
+         </FileRef>
+         <FileRef
+            location = "group:recordstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:render.h">
+         </FileRef>
+         <FileRef
+            location = "group:renderproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:saver.h">
+         </FileRef>
+         <FileRef
+            location = "group:saverproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:scrnsaver.h">
+         </FileRef>
+         <FileRef
+            location = "group:security.h">
+         </FileRef>
+         <FileRef
+            location = "group:securstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:shape.h">
+         </FileRef>
+         <FileRef
+            location = "group:shapestr.h">
+         </FileRef>
+         <FileRef
+            location = "group:shmstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:sync.h">
+         </FileRef>
+         <FileRef
+            location = "group:syncstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:vldXvMC.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xag.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xagstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:xcmiscstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xcomposite.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xcup.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xcupstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xdamage.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xdbe.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xdbeproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:XEVI.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xevie.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xeviestr.h">
+         </FileRef>
+         <FileRef
+            location = "group:XEVIstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xext.h">
+         </FileRef>
+         <FileRef
+            location = "group:xf86bigfont.h">
+         </FileRef>
+         <FileRef
+            location = "group:xf86bigfstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:xf86dga.h">
+         </FileRef>
+         <FileRef
+            location = "group:xf86dga1.h">
+         </FileRef>
+         <FileRef
+            location = "group:xf86dga1str.h">
+         </FileRef>
+         <FileRef
+            location = "group:xf86dgastr.h">
+         </FileRef>
+         <FileRef
+            location = "group:xf86misc.h">
+         </FileRef>
+         <FileRef
+            location = "group:xf86mscstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:xf86rush.h">
+         </FileRef>
+         <FileRef
+            location = "group:xf86rushstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:xf86vmode.h">
+         </FileRef>
+         <FileRef
+            location = "group:xf86vmstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xfixes.h">
+         </FileRef>
+         <FileRef
+            location = "group:xfixesproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:xfixeswire.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xge.h">
+         </FileRef>
+         <FileRef
+            location = "group:XI.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xinerama.h">
+         </FileRef>
+         <FileRef
+            location = "group:XInput.h">
+         </FileRef>
+         <FileRef
+            location = "group:XIproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:XKB.h">
+         </FileRef>
+         <FileRef
+            location = "group:XKBbells.h">
+         </FileRef>
+         <FileRef
+            location = "group:XKBconfig.h">
+         </FileRef>
+         <FileRef
+            location = "group:XKBfile.h">
+         </FileRef>
+         <FileRef
+            location = "group:XKBgeom.h">
+         </FileRef>
+         <FileRef
+            location = "group:XKBproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:XKBrules.h">
+         </FileRef>
+         <FileRef
+            location = "group:XKBsrv.h">
+         </FileRef>
+         <FileRef
+            location = "group:XKBstr.h">
+         </FileRef>
+         <FileRef
+            location = "group:XKBui.h">
+         </FileRef>
+         <FileRef
+            location = "group:XKM.h">
+         </FileRef>
+         <FileRef
+            location = "group:XKMformat.h">
+         </FileRef>
+         <FileRef
+            location = "group:XLbx.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xrandr.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xrender.h">
+         </FileRef>
+         <FileRef
+            location = "group:XRes.h">
+         </FileRef>
+         <FileRef
+            location = "group:XResproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:XShm.h">
+         </FileRef>
+         <FileRef
+            location = "group:XTest.h">
+         </FileRef>
+         <FileRef
+            location = "group:xtestext1.h">
+         </FileRef>
+         <FileRef
+            location = "group:xteststr.h">
+         </FileRef>
+         <FileRef
+            location = "group:xtrapbits.h">
+         </FileRef>
+         <FileRef
+            location = "group:xtrapddmi.h">
+         </FileRef>
+         <FileRef
+            location = "group:xtrapdi.h">
+         </FileRef>
+         <FileRef
+            location = "group:xtrapemacros.h">
+         </FileRef>
+         <FileRef
+            location = "group:xtraplib.h">
+         </FileRef>
+         <FileRef
+            location = "group:xtraplibp.h">
+         </FileRef>
+         <FileRef
+            location = "group:xtrapproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xv.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xvlib.h">
+         </FileRef>
+         <FileRef
+            location = "group:XvMC.h">
+         </FileRef>
+         <FileRef
+            location = "group:XvMClib.h">
+         </FileRef>
+         <FileRef
+            location = "group:XvMCproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xvproto.h">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:fonts"
+         name = "fonts">
+         <FileRef
+            location = "group:bdfint.h">
+         </FileRef>
+         <FileRef
+            location = "group:bitmap.h">
+         </FileRef>
+         <FileRef
+            location = "group:bufio.h">
+         </FileRef>
+         <FileRef
+            location = "group:fntfil.h">
+         </FileRef>
+         <FileRef
+            location = "group:fntfilio.h">
+         </FileRef>
+         <FileRef
+            location = "group:fntfilst.h">
+         </FileRef>
+         <FileRef
+            location = "group:font.h">
+         </FileRef>
+         <FileRef
+            location = "group:fontconf.h">
+         </FileRef>
+         <FileRef
+            location = "group:fontenc.h">
+         </FileRef>
+         <FileRef
+            location = "group:fontencc.h">
+         </FileRef>
+         <FileRef
+            location = "group:fontmisc.h">
+         </FileRef>
+         <FileRef
+            location = "group:fontproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:fontshow.h">
+         </FileRef>
+         <FileRef
+            location = "group:fontstruct.h">
+         </FileRef>
+         <FileRef
+            location = "group:fontutil.h">
+         </FileRef>
+         <FileRef
+            location = "group:fontxlfd.h">
+         </FileRef>
+         <FileRef
+            location = "group:FS.h">
+         </FileRef>
+         <FileRef
+            location = "group:FSlib.h">
+         </FileRef>
+         <FileRef
+            location = "group:fsmasks.h">
+         </FileRef>
+         <FileRef
+            location = "group:FSproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:ft.h">
+         </FileRef>
+         <FileRef
+            location = "group:ftfuncs.h">
+         </FileRef>
+         <FileRef
+            location = "group:pcf.h">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:HookObjI.h">
+      </FileRef>
+      <FileRef
+         location = "group:HPkeysym.h">
+      </FileRef>
+      <Group
+         location = "group:ICE"
+         name = "ICE">
+         <FileRef
+            location = "group:ICE.h">
+         </FileRef>
+         <FileRef
+            location = "group:ICEconn.h">
+         </FileRef>
+         <FileRef
+            location = "group:ICElib.h">
+         </FileRef>
+         <FileRef
+            location = "group:ICEmsg.h">
+         </FileRef>
+         <FileRef
+            location = "group:ICEproto.h">
+         </FileRef>
+         <FileRef
+            location = "group:ICEutil.h">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:ImUtil.h">
+      </FileRef>
+      <FileRef
+         location = "group:InitialI.h">
+      </FileRef>
+      <FileRef
+         location = "group:Intrinsic.h">
+      </FileRef>
+      <FileRef
+         location = "group:IntrinsicI.h">
+      </FileRef>
+      <FileRef
+         location = "group:IntrinsicP.h">
+      </FileRef>
+      <FileRef
+         location = "group:keysym.h">
+      </FileRef>
+      <FileRef
+         location = "group:keysymdef.h">
+      </FileRef>
+      <FileRef
+         location = "group:Object.h">
+      </FileRef>
+      <FileRef
+         location = "group:ObjectP.h">
+      </FileRef>
+      <FileRef
+         location = "group:PassivGraI.h">
+      </FileRef>
+      <Group
+         location = "group:PM"
+         name = "PM">
+         <FileRef
+            location = "group:PM.h">
+         </FileRef>
+         <FileRef
+            location = "group:PMproto.h">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:RectObj.h">
+      </FileRef>
+      <FileRef
+         location = "group:RectObjP.h">
+      </FileRef>
+      <FileRef
+         location = "group:ResConfigP.h">
+      </FileRef>
+      <FileRef
+         location = "group:ResourceI.h">
+      </FileRef>
+      <FileRef
+         location = "group:SelectionI.h">
+      </FileRef>
+      <FileRef
+         location = "group:Shell.h">
+      </FileRef>
+      <FileRef
+         location = "group:ShellI.h">
+      </FileRef>
+      <FileRef
+         location = "group:ShellP.h">
+      </FileRef>
+      <Group
+         location = "group:SM"
+         name = "SM">
+         <FileRef
+            location = "group:SM.h">
+         </FileRef>
+         <FileRef
+            location = "group:SMlib.h">
+         </FileRef>
+         <FileRef
+            location = "group:SMproto.h">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:StringDefs.h">
+      </FileRef>
+      <FileRef
+         location = "group:Sunkeysym.h">
+      </FileRef>
+      <FileRef
+         location = "group:ThreadsI.h">
+      </FileRef>
+      <FileRef
+         location = "group:TranslateI.h">
+      </FileRef>
+      <FileRef
+         location = "group:VarargsI.h">
+      </FileRef>
+      <FileRef
+         location = "group:Vendor.h">
+      </FileRef>
+      <FileRef
+         location = "group:VendorP.h">
+      </FileRef>
+      <FileRef
+         location = "group:X.h">
+      </FileRef>
+      <FileRef
+         location = "group:X10.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xalloca.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xarch.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xatom.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xauth.h">
+      </FileRef>
+      <Group
+         location = "group:Xaw"
+         name = "Xaw">
+         <FileRef
+            location = "group:AllWidgets.h">
+         </FileRef>
+         <FileRef
+            location = "group:AsciiSink.h">
+         </FileRef>
+         <FileRef
+            location = "group:AsciiSinkP.h">
+         </FileRef>
+         <FileRef
+            location = "group:AsciiSrc.h">
+         </FileRef>
+         <FileRef
+            location = "group:AsciiSrcP.h">
+         </FileRef>
+         <FileRef
+            location = "group:AsciiText.h">
+         </FileRef>
+         <FileRef
+            location = "group:AsciiTextP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Box.h">
+         </FileRef>
+         <FileRef
+            location = "group:BoxP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Cardinals.h">
+         </FileRef>
+         <FileRef
+            location = "group:Command.h">
+         </FileRef>
+         <FileRef
+            location = "group:CommandP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Dialog.h">
+         </FileRef>
+         <FileRef
+            location = "group:DialogP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Form.h">
+         </FileRef>
+         <FileRef
+            location = "group:FormP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Grip.h">
+         </FileRef>
+         <FileRef
+            location = "group:GripP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Label.h">
+         </FileRef>
+         <FileRef
+            location = "group:LabelP.h">
+         </FileRef>
+         <FileRef
+            location = "group:List.h">
+         </FileRef>
+         <FileRef
+            location = "group:ListP.h">
+         </FileRef>
+         <FileRef
+            location = "group:MenuButton.h">
+         </FileRef>
+         <FileRef
+            location = "group:MenuButtoP.h">
+         </FileRef>
+         <FileRef
+            location = "group:MultiSink.h">
+         </FileRef>
+         <FileRef
+            location = "group:MultiSinkP.h">
+         </FileRef>
+         <FileRef
+            location = "group:MultiSrc.h">
+         </FileRef>
+         <FileRef
+            location = "group:MultiSrcP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Paned.h">
+         </FileRef>
+         <FileRef
+            location = "group:PanedP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Panner.h">
+         </FileRef>
+         <FileRef
+            location = "group:PannerP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Porthole.h">
+         </FileRef>
+         <FileRef
+            location = "group:PortholeP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Repeater.h">
+         </FileRef>
+         <FileRef
+            location = "group:RepeaterP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Reports.h">
+         </FileRef>
+         <FileRef
+            location = "group:Scrollbar.h">
+         </FileRef>
+         <FileRef
+            location = "group:ScrollbarP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Simple.h">
+         </FileRef>
+         <FileRef
+            location = "group:SimpleMenP.h">
+         </FileRef>
+         <FileRef
+            location = "group:SimpleMenu.h">
+         </FileRef>
+         <FileRef
+            location = "group:SimpleP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Sme.h">
+         </FileRef>
+         <FileRef
+            location = "group:SmeBSB.h">
+         </FileRef>
+         <FileRef
+            location = "group:SmeBSBP.h">
+         </FileRef>
+         <FileRef
+            location = "group:SmeLine.h">
+         </FileRef>
+         <FileRef
+            location = "group:SmeLineP.h">
+         </FileRef>
+         <FileRef
+            location = "group:SmeP.h">
+         </FileRef>
+         <FileRef
+            location = "group:StripCharP.h">
+         </FileRef>
+         <FileRef
+            location = "group:StripChart.h">
+         </FileRef>
+         <FileRef
+            location = "group:Template.c">
+         </FileRef>
+         <FileRef
+            location = "group:Template.h">
+         </FileRef>
+         <FileRef
+            location = "group:TemplateP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Text.h">
+         </FileRef>
+         <FileRef
+            location = "group:TextP.h">
+         </FileRef>
+         <FileRef
+            location = "group:TextSink.h">
+         </FileRef>
+         <FileRef
+            location = "group:TextSinkP.h">
+         </FileRef>
+         <FileRef
+            location = "group:TextSrc.h">
+         </FileRef>
+         <FileRef
+            location = "group:TextSrcP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Tip.h">
+         </FileRef>
+         <FileRef
+            location = "group:TipP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Toggle.h">
+         </FileRef>
+         <FileRef
+            location = "group:ToggleP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Tree.h">
+         </FileRef>
+         <FileRef
+            location = "group:TreeP.h">
+         </FileRef>
+         <FileRef
+            location = "group:VendorEP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Viewport.h">
+         </FileRef>
+         <FileRef
+            location = "group:ViewportP.h">
+         </FileRef>
+         <FileRef
+            location = "group:XawImP.h">
+         </FileRef>
+         <FileRef
+            location = "group:XawInit.h">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Xcms.h">
+      </FileRef>
+      <Group
+         location = "group:Xcursor"
+         name = "Xcursor">
+         <FileRef
+            location = "group:Xcursor.h">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Xdefs.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xdmcp.h">
+      </FileRef>
+      <FileRef
+         location = "group:XF86keysym.h">
+      </FileRef>
+      <Group
+         location = "group:Xft"
+         name = "Xft">
+         <FileRef
+            location = "group:Xft.h">
+         </FileRef>
+         <FileRef
+            location = "group:XftCompat.h">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Xfuncproto.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xfuncs.h">
+      </FileRef>
+      <FileRef
+         location = "group:XKBlib.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xlib.h">
+      </FileRef>
+      <FileRef
+         location = "group:XlibConf.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xlibint.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xlocale.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xmd.h">
+      </FileRef>
+      <Group
+         location = "group:Xmu"
+         name = "Xmu">
+         <FileRef
+            location = "group:Atoms.h">
+         </FileRef>
+         <FileRef
+            location = "group:CharSet.h">
+         </FileRef>
+         <FileRef
+            location = "group:CloseHook.h">
+         </FileRef>
+         <FileRef
+            location = "group:Converters.h">
+         </FileRef>
+         <FileRef
+            location = "group:CurUtil.h">
+         </FileRef>
+         <FileRef
+            location = "group:CvtCache.h">
+         </FileRef>
+         <FileRef
+            location = "group:DisplayQue.h">
+         </FileRef>
+         <FileRef
+            location = "group:Drawing.h">
+         </FileRef>
+         <FileRef
+            location = "group:Editres.h">
+         </FileRef>
+         <FileRef
+            location = "group:EditresP.h">
+         </FileRef>
+         <FileRef
+            location = "group:Error.h">
+         </FileRef>
+         <FileRef
+            location = "group:ExtAgent.h">
+         </FileRef>
+         <FileRef
+            location = "group:Initer.h">
+         </FileRef>
+         <FileRef
+            location = "group:Lookup.h">
+         </FileRef>
+         <FileRef
+            location = "group:Misc.h">
+         </FileRef>
+         <FileRef
+            location = "group:StdCmap.h">
+         </FileRef>
+         <FileRef
+            location = "group:StdSel.h">
+         </FileRef>
+         <FileRef
+            location = "group:SysUtil.h">
+         </FileRef>
+         <FileRef
+            location = "group:WidgetNode.h">
+         </FileRef>
+         <FileRef
+            location = "group:WinUtil.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xct.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xmu.h">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Xos.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xos_r.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xosdefs.h">
+      </FileRef>
+      <FileRef
+         location = "group:xpm.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xpoll.h">
+      </FileRef>
+      <Group
+         location = "group:XprintAppUtil"
+         name = "XprintAppUtil">
+         <FileRef
+            location = "group:xpapputil.h">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:XprintUtil"
+         name = "XprintUtil">
+         <FileRef
+            location = "group:xprintutil.h">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Xproto.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xprotostr.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xregion.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xresource.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xthreads.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xtos.h">
+      </FileRef>
+      <Group
+         location = "group:Xtrans"
+         name = "Xtrans">
+         <FileRef
+            location = "group:transport.c">
+         </FileRef>
+         <FileRef
+            location = "group:Xtrans.c">
+         </FileRef>
+         <FileRef
+            location = "group:Xtrans.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xtransint.h">
+         </FileRef>
+         <FileRef
+            location = "group:Xtranslcl.c">
+         </FileRef>
+         <FileRef
+            location = "group:Xtranssock.c">
+         </FileRef>
+         <FileRef
+            location = "group:Xtranstli.c">
+         </FileRef>
+         <FileRef
+            location = "group:Xtransutil.c">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Xutil.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xw32defs.h">
+      </FileRef>
+      <FileRef
+         location = "group:XWDFile.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xwindows.h">
+      </FileRef>
+      <FileRef
+         location = "group:Xwinsock.h">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "self:xbeizer.xcodeproj">
+   </FileRef>
+</Workspace>
