@@ -11,8 +11,14 @@
 
 #include <stdio.h>
 #include <math.h>
+#include <time.h>
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 #include <X11/cursorfont.h>
+
+XPoint dividePoints(XPoint p1, XPoint p2, float t);
+short divideValue(short n1, short n2, float t);
+XPoint getBeizerPoint(XPoint* p, float t, int l);
+XPoint _getBeizerPoint(XPoint* p, float t, int l, int n);
 
 #endif
