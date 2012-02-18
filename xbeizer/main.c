@@ -12,8 +12,7 @@
 #define WIDTH  500
 #define HIGHT 500
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv){
 	Display *dpy;
 	Window w,quit;
 	Window root;
@@ -30,15 +29,11 @@ int main(int argc, char **argv)
     usrPoints[0].x = 20;
     usrPoints[0].y = 100;
     usrPoints[1].x = 200;
-    usrPoints[1].y = 400;
+    usrPoints[1].y = 200;
     usrPoints[2].x = 400;
     usrPoints[2].y = 50;
     for (i = 0; i < 20; i++) {
         bufPoints[i] = usrPoints[i];
-    }
-    for (t = 0; t < 1; t+=0.01) {
-        XPoint p = getBeizerPoint(bufPoints, t, 2);
-        printf("Returned : %hd, %hd\n\n", p.x, p.y);
     }
     
     
@@ -73,26 +68,28 @@ int main(int argc, char **argv)
     
     
     t = 0;
+    
     //******************************loop***********
 	while(1){
+        XDrawRectangle(dpy, w, gc, bufPoints[0].x, bufPoints[0].y, 3, 3);
+        XDrawRectangle(dpy, w, gc, bufPoints[1].x, bufPoints[1].y, 3, 3);
         if(XEventsQueued(dpy, QueuedAfterReading)){
             //***************************event************
             XNextEvent(dpy, &e);
             switch(e.type){
                 case ButtonPress : if(e.xany.window == quit) return 0;
                     XDrawString(dpy,quit,gc,4,10,"Exit",4);
-                    XDrawRectangle(dpy, w, gc, bufPoints[0].x, bufPoints[0].y, 3, 3);
-                    XDrawRectangle(dpy, w, gc, bufPoints[1].x, bufPoints[1].y, 3, 3);
-                    XDrawRectangle(dpy, w, gc, bufPoints[2].x, bufPoints[2].y, 3, 3);
-
-
             }
         } else {
             //***************************animation*********
+            
             usleep(500);
             XFlush(dpy); 
             if (t < 1) {
-                XPoint p = getBeizerPoint(bufPoints, t, 3);
+                for (i = 0; i < 20; i++) {
+                    usrPoints[i] = bufPoints[i];
+                }
+                XPoint p = getBeizerPoint(usrPoints, t, 2);
                 XDrawPoint(dpy, w, gc, p.x, p.y);
                 t += 0.0001;
             }
@@ -111,16 +108,16 @@ XPoint _getBeizerPoint(XPoint* p, float t, int l, int n){
     if (l - n == 2) {
         printf("call : p[%d].x %hd, p[%d].y %hd\n       p2[%d].x %hd, p[%d].y %hd\n",n ,p[n].x, n, p[n].y,n+1 ,p[n+1].x ,n+1, p[n+1].y);
         printf("call : p[%d].x %hd, p[%d].y %hd\n       p2[%d].x %hd, p[%d].y %hd\n",l-n ,p[l-n].x, l-n, p[l-n].y,l-n-1 ,p[l-n-1].x ,l-n-1, p[l-n-1].y);
-        return dividePoints(p[l-n], dividePoints(p[n], p[n+1], t), t);
+        return dividePoints(dividePoints(p[n], p[n+1], t),p[l-n], t);
     } else {
         printf("called! : _get BeizerPoint\n");
         printf("call : p[%d].x %hd, p[%d].y %hd\n       p2[%d].x %hd, p[%d].y %hd\n",n ,p[n].x, n, p[n].y,n+1 ,p[n+1].x ,n+1, p[n+1].y);
         p[n+1] = dividePoints(p[n], p[n+1], t);
         printf("call : p[%d].x %hd, p[%d].y %hd\n       p2[%d].x %hd, p[%d].y %hd\n",l-n ,p[l-n].x, l-n, p[l-n].y,l-n-1 ,p[l-n-1].x ,l-n-1, p[l-n-1].y);
-        p[l-n-1] = dividePoints(p[l-n], p[l-n-1], t);
+        p[l-n-1] = dividePoints(p[l-n-1], p[l-n], t);
         
         if (n >= l/2) {
-            return dividePoints(p[n+1], p[l-n+1], t);
+            return dividePoints(p[l-n+1], p[n+1], t);
         } else {
             return _getBeizerPoint(p, t, l, n-1);
         }
