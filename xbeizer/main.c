@@ -13,12 +13,13 @@
 #define BORDER 2
 #define WIDTH  500
 #define HEIGHT 500
+#define NANOTIME 1000
 
 int main(int argc, char **argv){
 	Display *dpy;
-	Window w,quit;
+	Window w,quit,clearButton;
 	Window root;
-    //Pixmap pmap;
+    struct timespec wait;
 	int    screen;
 	unsigned long black, white;
 	GC       gc;
@@ -59,57 +60,70 @@ int main(int argc, char **argv){
 
     /* Make Sub Window */
 	quit = XCreateSimpleWindow(dpy, w, 10, 3, 30, 12, BORDER, black, white);
+    clearButton = XCreateSimpleWindow(dpy, w, 52, 3, 37, 12, BORDER, black, white);
+
     
 	gc = XCreateGC(dpy, w, 0, NULL);
     
     pointNum = 0;
     t = 0;
+    wait.tv_sec = 0;
+    wait.tv_nsec = NANOTIME;
     
     //*********************************************
     
 	XSelectInput(dpy, w, ButtonPressMask | StructureNotifyMask | PointerMotionMask);
     XSelectInput(dpy, quit, ButtonPressMask);
+    XSelectInput(dpy, clearButton, ButtonPressMask);
+
     
 	XMapWindow(dpy, w);
 	XMapSubwindows(dpy, w);
     XSetForeground(dpy, gc, white);
     XFillRectangle(dpy, w, gc, 0, 0, WIDTH, HEIGHT);
 	XSetForeground(dpy,gc,black);
-    printf("ss\n");
-    
-    
-    XDrawRectangle(dpy, w, gc, bufPoints[0].x-1, bufPoints[0].y-1, 2, 2);
-    XDrawRectangle(dpy, w, gc, bufPoints[1].x-1, bufPoints[1].y-1, 2, 2);
-    XDrawRectangle(dpy, w, gc, bufPoints[2].x-1, bufPoints[2].y-1, 2, 2);
-    XDrawRectangle(dpy, w, gc, bufPoints[3].x-1, bufPoints[3].y-1, 2, 2);
-    XDrawLine(dpy, w, gc, bufPoints[0].x, bufPoints[0].y, bufPoints[1].x, bufPoints[1].y);
-    XDrawLine(dpy, w, gc, bufPoints[1].x, bufPoints[1].y, bufPoints[2].x, bufPoints[2].y);
-    XDrawLine(dpy, w, gc, bufPoints[2].x, bufPoints[2].y, bufPoints[3].x, bufPoints[3].y);
-    XDrawLine(dpy, w, gc, 80, 300, 80, 20);
-    
+
     //*************************************loop****
 	while(1){
         if(XEventsQueued(dpy, QueuedAfterReading)){
             XDrawString(dpy, quit, gc, 4, 10, "Exit", 4);
+            XDrawString(dpy, clearButton, gc, 4, 10, "Clear", 5);
             //***********************************event****
             XNextEvent(dpy, &e);
             switch(e.type){
                 case ButtonPress : 
                     if(e.xany.window == quit) return 0;
+                    drawPointDetail(dpy, w, gc, bufPoints, 4);
+
             }
         } else {
             //********************************animation****
             if (t < 1) {
-                usleep(33);
+                nanosleep(&wait, NULL);
                 drawBeizerCurve(dpy, w, gc, usrPoints, bufPoints, t, 4);
                 t += 0.00001;
-            } else {
-                printf("complete!\n");
             }
         }
         XFlush(dpy);
 	}
     return 0;
+}
+
+//*********************************************
+
+void drawPointDetail(Display* dpy, Drawable w, GC gc, XPoint* up, int num){
+    int i = 0;
+    for(; i < num; i++){
+        XPoint p = up[i];
+        char str[20];
+        sprintf(str, "x:%hd y:%hd",p.x, p.y);
+        if (p.x < WIDTH / 2) {
+            XDrawString(dpy, w, gc, p.x, p.y-3, str, (int)strlen(str));
+        } else {
+            XDrawString(dpy, w, gc, p.x-25, p.y-3, str, (int)strlen(str));
+        }
+        XFillArc(dpy, w, gc, p.x-3, p.y-3, 6, 6, 0, 360*64);
+    }
 }
 
 //*********************************************
