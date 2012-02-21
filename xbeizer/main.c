@@ -8,23 +8,29 @@
 
 #include "xbeizer.h"
 
+//#define DEBUG
+
 #define BORDER 2
 #define WIDTH  500
-#define HIGHT 500
+#define HEIGHT 500
 
 int main(int argc, char **argv){
 	Display *dpy;
 	Window w,quit;
 	Window root;
+    //Pixmap pmap;
 	int    screen;
 	unsigned long black, white;
 	GC       gc;
 	XEvent   e;
 	int  i;
     float t;
-    Cursor csr;
+    int pointNum;
     XPoint usrPoints[20];
     XPoint bufPoints[20];
+    XPoint selectedPoints[20];
+    
+    //********************************test data****
     
     usrPoints[0].x = 20;
     usrPoints[0].y = 100;
@@ -39,7 +45,7 @@ int main(int argc, char **argv){
     }
     
     
-    //*********************************************
+    //*************************************init****
     
 	dpy = XOpenDisplay("");
     
@@ -48,82 +54,111 @@ int main(int argc, char **argv){
 	white = WhitePixel (dpy, screen);
 	black = BlackPixel (dpy, screen);
     
-	w = XCreateSimpleWindow(dpy, root, 100, 100, WIDTH, HIGHT, BORDER, black, white);
-	/* Make Sub Window */
+	w = XCreateSimpleWindow(dpy, root, 100, 100, WIDTH, HEIGHT, BORDER, black, white);
+	//pmap = XCreatePixmap(dpy, w, WIDTH, HEIGHT, DefaultDepth(dpy, 0));
+
+    /* Make Sub Window */
 	quit = XCreateSimpleWindow(dpy, w, 10, 3, 30, 12, BORDER, black, white);
     
 	gc = XCreateGC(dpy, w, 0, NULL);
     
-    csr = XCreateFontCursor(dpy, 60);
+    pointNum = 0;
+    t = 0;
     
     //*********************************************
     
-	XSelectInput(dpy, w, ButtonPressMask);
-	XSelectInput(dpy, quit, ButtonPressMask);
+	XSelectInput(dpy, w, ButtonPressMask | StructureNotifyMask | PointerMotionMask);
+    XSelectInput(dpy, quit, ButtonPressMask);
     
 	XMapWindow(dpy, w);
 	XMapSubwindows(dpy, w);
-    
+    XSetForeground(dpy, gc, white);
+    XFillRectangle(dpy, w, gc, 0, 0, WIDTH, HEIGHT);
 	XSetForeground(dpy,gc,black);
+    printf("ss\n");
     
-    //************************************test*****
     
+    XDrawRectangle(dpy, w, gc, bufPoints[0].x-1, bufPoints[0].y-1, 2, 2);
+    XDrawRectangle(dpy, w, gc, bufPoints[1].x-1, bufPoints[1].y-1, 2, 2);
+    XDrawRectangle(dpy, w, gc, bufPoints[2].x-1, bufPoints[2].y-1, 2, 2);
+    XDrawRectangle(dpy, w, gc, bufPoints[3].x-1, bufPoints[3].y-1, 2, 2);
+    XDrawLine(dpy, w, gc, bufPoints[0].x, bufPoints[0].y, bufPoints[1].x, bufPoints[1].y);
+    XDrawLine(dpy, w, gc, bufPoints[1].x, bufPoints[1].y, bufPoints[2].x, bufPoints[2].y);
+    XDrawLine(dpy, w, gc, bufPoints[2].x, bufPoints[2].y, bufPoints[3].x, bufPoints[3].y);
+    XDrawLine(dpy, w, gc, 80, 300, 80, 20);
     
-    t = 0;
-
-    //******************************loop***********
+    //*************************************loop****
 	while(1){
-        
         if(XEventsQueued(dpy, QueuedAfterReading)){
-            //***************************event************
+            XDrawString(dpy, quit, gc, 4, 10, "Exit", 4);
+            //***********************************event****
             XNextEvent(dpy, &e);
             switch(e.type){
-                case ButtonPress : if(e.xany.window == quit) return 0;
-                    XDrawString(dpy,quit,gc,4,10,"Exit",4);
-                    XDrawRectangle(dpy, w, gc, bufPoints[0].x-1, bufPoints[0].y-1, 2, 2);
-                    XDrawRectangle(dpy, w, gc, bufPoints[1].x-1, bufPoints[1].y-1, 2, 2);
-                    XDrawRectangle(dpy, w, gc, bufPoints[2].x-1, bufPoints[2].y-1, 2, 2);
-                    XDrawRectangle(dpy, w, gc, bufPoints[3].x-1, bufPoints[3].y-1, 2, 2);
-                    XDrawLine(dpy, w, gc, bufPoints[0].x, bufPoints[0].y, bufPoints[1].x, bufPoints[1].y);
-                    XDrawLine(dpy, w, gc, bufPoints[1].x, bufPoints[1].y, bufPoints[2].x, bufPoints[2].y);
-                    XDrawLine(dpy, w, gc, bufPoints[2].x, bufPoints[2].y, bufPoints[3].x, bufPoints[3].y);
-                    XDrawLine(dpy, w, gc, 80, 300, 80, 20);
-
-
+                case ButtonPress : 
+                    if(e.xany.window == quit) return 0;
             }
         } else {
-            //***************************animation*********
-            
-            usleep(5);
-            XFlush(dpy); 
+            //********************************animation****
             if (t < 1) {
-                for (i = 0; i < 20; i++) {
-                    usrPoints[i] = bufPoints[i];
-                }
-                XPoint p = getBeizerPoint(usrPoints, t, 4);
-                XDrawPoint(dpy, w, gc, p.x, p.y);
+                usleep(33);
+                drawBeizerCurve(dpy, w, gc, usrPoints, bufPoints, t, 4);
                 t += 0.00001;
+            } else {
+                printf("complete!\n");
             }
         }
+        XFlush(dpy);
 	}
+    return 0;
 }
 
 //*********************************************
 
-XPoint getBeizerPoint(XPoint* p, float t, int l){
+void drawBeizerCurve(Display* dpy, Drawable w, GC gc, XPoint* up, XPoint* bp, float t, int l){
+#ifdef DEBUG
+    printf("called: drawBeizerCurve");
+#endif
+    int i;
+    for (i = 0; i < 20; i++) {
+        up[i] = bp[i];
+    }
+    XPoint p = _getBeizerPoint(up, t, l-1, 0);
+    XDrawPoint(dpy, w, gc, p.x, p.y);
+}
+
+
+//*********************************************
+
+XPoint getBeizerPoint(XPoint* up, XPoint* bp, float t, int l){
+
+    int i;
+    for (i = 0; i < 20; i++) {
+        up[i] = bp[i];
+    }
+#ifdef DEBUG
     printf("called! : get BeizerPoint\n");
-    return _getBeizerPoint(p, t, l-1, 0);
+#endif
+    return _getBeizerPoint(up, t, l-1, 0);
 }
 
 XPoint _getBeizerPoint(XPoint* p, float t, int l, int n){
+
+#ifdef DEBUG
     printf("called! : _get BeizerPoint\n");
+#endif
     if (n >= l/2) {
+#ifdef DEBUG
         printf("RETURN! : p[%d].x %hd, p[%d].y %hd /// p2[%d].x %hd, p[%d].y %hd\n",n ,p[n].x, n, p[n].y,n+1 ,p[n+1].x ,n+1, p[n+1].y);
+#endif
         return dividePoints(p[n], p[n+1], t);
     } else {
+#ifdef DEBUG
         printf("call2 : p[%d].x %hd, p[%d].y %hd /// p2[%d].x %hd, p[%d].y %hd\n",n ,p[n].x, n, p[n].y,n+1 ,p[n+1].x ,n+1, p[n+1].y);
+#endif
         p[n+1] = dividePoints(p[n], p[n+1], t);
+#ifdef DEBUG
         printf("call2 : p[%d].x %hd, p[%d].y %hd /// p2[%d].x %hd, p[%d].y %hd\n",l-n ,p[l-n].x, l-n, p[l-n].y,l-n-1 ,p[l-n-1].x ,l-n-1, p[l-n-1].y);
+#endif
         p[l-n-1] = dividePoints(p[l-n-1], p[l-n], t);
         return _getBeizerPoint(p, t, l, n+1);
     }
@@ -135,7 +170,9 @@ XPoint dividePoints(XPoint p1, XPoint p2, float t){
     XPoint ans;
     ans.x = divideValue(p1.x, p2.x, t);
     ans.y = divideValue(p1.y, p2.y, t);
+#ifdef DEBUG
     printf("divided : x %hd, y %hd\n", ans.x, ans.y);
+#endif
     return ans;
 }
 
