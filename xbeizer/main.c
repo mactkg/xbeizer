@@ -17,7 +17,7 @@
 
 int main(int argc, char **argv){
 	Display *dpy;
-	Window w,quit,clearButton;
+	Window w, quit, clearButton, drawButton;
 	Window root;
     struct timespec wait;
 	int    screen;
@@ -26,10 +26,12 @@ int main(int argc, char **argv){
 	XEvent   e;
 	int  i;
     float t;
+    int isDraw;
     int pointNum;
     XPoint usrPoints[20];
     XPoint bufPoints[20];
     XPoint selectedPoints[20];
+    Pixmap pmap;
     
     //********************************test data****
     
@@ -56,16 +58,18 @@ int main(int argc, char **argv){
 	black = BlackPixel (dpy, screen);
     
 	w = XCreateSimpleWindow(dpy, root, 100, 100, WIDTH, HEIGHT, BORDER, black, white);
-	//pmap = XCreatePixmap(dpy, w, WIDTH, HEIGHT, DefaultDepth(dpy, 0));
-
+    
     /* Make Sub Window */
 	quit = XCreateSimpleWindow(dpy, w, 10, 3, 30, 12, BORDER, black, white);
     clearButton = XCreateSimpleWindow(dpy, w, 52, 3, 37, 12, BORDER, black, white);
+    drawButton = XCreateSimpleWindow(dpy, w, 100, 3, 35, 12, BORDER, black, white);
 
-    
 	gc = XCreateGC(dpy, w, 0, NULL);
     
-    pointNum = 0;
+    pmap = XCreatePixmap(dpy, w, WIDTH, HEIGHT, XDefaultDepth(dpy, 0));
+    
+    pointNum = 4;
+    isDraw = 0;
     t = 0;
     wait.tv_sec = 0;
     wait.tv_nsec = NANOTIME;
@@ -75,38 +79,59 @@ int main(int argc, char **argv){
 	XSelectInput(dpy, w, ButtonPressMask | StructureNotifyMask | PointerMotionMask);
     XSelectInput(dpy, quit, ButtonPressMask);
     XSelectInput(dpy, clearButton, ButtonPressMask);
+    XSelectInput(dpy, drawButton, ButtonPressMask);
 
     
 	XMapWindow(dpy, w);
 	XMapSubwindows(dpy, w);
     XSetForeground(dpy, gc, white);
-    XFillRectangle(dpy, w, gc, 0, 0, WIDTH, HEIGHT);
-	XSetForeground(dpy,gc,black);
+	XSetForeground(dpy, gc,black);
 
     //*************************************loop****
 	while(1){
         if(XEventsQueued(dpy, QueuedAfterReading)){
             XDrawString(dpy, quit, gc, 4, 10, "Exit", 4);
             XDrawString(dpy, clearButton, gc, 4, 10, "Clear", 5);
+            XDrawString(dpy, drawButton, gc, 4, 10, "Draw", 4);
             //***********************************event****
             XNextEvent(dpy, &e);
             switch(e.type){
                 case ButtonPress : 
-                    if(e.xany.window == quit) return 0;
-                    drawPointDetail(dpy, w, gc, bufPoints, 4);
-
+                    if (e.xany.window == quit) return 0;
+                    if (e.xany.window == clearButton) {
+                        XSetForeground(dpy, gc, white);
+                        XFillRectangle(dpy, w, gc, 0, 0, WIDTH, HEIGHT);
+                        XSetForeground(dpy, gc,black);
+                        t = 0;
+                        isDraw = 0;
+                    }
+                    if (e.xany.window == drawButton) {
+                        isDraw = 1;
+                        drawPointDetail(dpy, w, gc, bufPoints, pointNum);
+                    }
+                    break;
             }
         } else {
             //********************************animation****
-            if (t < 1) {
+            if (t < 1 && isDraw) {
                 nanosleep(&wait, NULL);
-                drawBeizerCurve(dpy, w, gc, usrPoints, bufPoints, t, 4);
+                drawBeizerCurve(dpy, w, gc, usrPoints, bufPoints, t, pointNum);
                 t += 0.00001;
+            } else if (t >= 1 && isDraw) {
+                isDraw = 0;
             }
         }
+        //XCopyPlane(dpy, pmap, w, gc, 0, 0, WIDTH, HEIGHT, 0, 0, 1);
         XFlush(dpy);
+        //XCopyArea(dpy, pmap, w, gc, 0, 0, WIDTH, HEIGHT, 0, 0);
 	}
     return 0;
+}
+
+//*********************************************
+
+void drawFillArc(Display* dpy, Drawable w, GC gc, int x, int y, int r){
+    XFillArc(dpy, w, gc, x-(r/2), y-(r/2), r, r, 0, 360*64);
 }
 
 //*********************************************
@@ -122,7 +147,7 @@ void drawPointDetail(Display* dpy, Drawable w, GC gc, XPoint* up, int num){
         } else {
             XDrawString(dpy, w, gc, p.x-25, p.y-3, str, (int)strlen(str));
         }
-        XFillArc(dpy, w, gc, p.x-3, p.y-3, 6, 6, 0, 360*64);
+        drawFillArc(dpy, w, gc, p.x, p.y, 6);
     }
 }
 
