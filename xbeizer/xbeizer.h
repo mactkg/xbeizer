@@ -16,14 +16,17 @@
 #include <string.h>
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
-#include <X11/cursorfont.h>
 
+void drawFillArc(Display* dpy, Drawable w, GC gc, int x, int y, int r);
 
 void drawPointDetail(Display* dpy, Drawable w, GC gc, XPoint* up, int num);
+
 void drawBeizerCurve(Display* dpy, Drawable w, GC gc, XPoint* up, XPoint* bp, float t, int l);
-XPoint dividePoints(XPoint p1, XPoint p2, float t);
-short divideValue(short n1, short n2, float t);
+
 XPoint getBeizerPoint(XPoint* p, float t, int l, int n);
-void drawFillArc(Display* dpy, Drawable w, GC gc, int x, int y, int r);
+
+XPoint dividePoints(XPoint p1, XPoint p2, float t);
+
+short divideValue(short n1, short n2, float t);
 
 #endif

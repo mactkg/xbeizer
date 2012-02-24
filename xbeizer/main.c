@@ -31,22 +31,7 @@ int main(int argc, char **argv){
     XPoint usrPoints[20];
     XPoint bufPoints[20];
     XPoint selectedPoints[20];
-    Pixmap pmap;
-    
-    //********************************test data****
-    /*
-    usrPoints[0].x = 20;
-    usrPoints[0].y = 100;
-    usrPoints[1].x = 60;
-    usrPoints[1].y = 200;
-    usrPoints[2].x = 100;
-    usrPoints[2].y = 200;
-    usrPoints[3].x = 140;
-    usrPoints[3].y = 100;
-    for (i = 0; i < 20; i++) {
-        bufPoints[i] = usrPoints[i];
-    }
-    */
+
     //*************************************init****
     
 	dpy = XOpenDisplay("");
@@ -58,14 +43,12 @@ int main(int argc, char **argv){
     
 	w = XCreateSimpleWindow(dpy, root, 100, 100, WIDTH, HEIGHT, BORDER, black, white);
     
-    /* Make Sub Window */
+    /* Make Buttons */
 	quit = XCreateSimpleWindow(dpy, w, 10, 3, 30, 12, BORDER, black, white);
     clearButton = XCreateSimpleWindow(dpy, w, 52, 3, 37, 12, BORDER, black, white);
     drawButton = XCreateSimpleWindow(dpy, w, 100, 3, 35, 12, BORDER, black, white);
 
 	gc = XCreateGC(dpy, w, 0, NULL);
-    
-    pmap = XCreatePixmap(dpy, w, WIDTH, HEIGHT, XDefaultDepth(dpy, 0));
     
     pointNum = 0;
     isDraw = 0;
@@ -82,7 +65,7 @@ int main(int argc, char **argv){
     
     //*********************************************
     
-	XSelectInput(dpy, w, ButtonPressMask | StructureNotifyMask | PointerMotionMask | ExposureMask);
+	XSelectInput(dpy, w, ButtonPressMask | ExposureMask);
     XSelectInput(dpy, quit, ButtonPressMask);
     XSelectInput(dpy, clearButton, ButtonPressMask);
     XSelectInput(dpy, drawButton, ButtonPressMask);
@@ -126,9 +109,6 @@ int main(int argc, char **argv){
                     break;
                 case Expose:
                     drawPointDetail(dpy, w, gc, bufPoints, pointNum);
-                    XDrawString(dpy, quit, gc, 4, 10, "Exit", 4);
-                    XDrawString(dpy, clearButton, gc, 4, 10, "Clear", 5);
-                    XDrawString(dpy, drawButton, gc, 4, 10, "Draw", 4);
                     isDraw = 0;
                     t = 0;
             }
