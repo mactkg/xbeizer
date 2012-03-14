@@ -277,8 +277,8 @@
 
 /* Begin PBXFileReference section */
 		21BD6B7414E4B05900ACC45F /* xbeizer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xbeizer; sourceTree = BUILT_PRODUCTS_DIR; };
-		21BD6B7814E4B05900ACC45F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		21BD6B7A14E4B05900ACC45F /* xbeizer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = xbeizer.1; sourceTree = "<group>"; };
+		21BD6B7814E4B05900ACC45F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = main.c; path = src/main.c; sourceTree = "<group>"; };
+		21BD6B7A14E4B05900ACC45F /* xbeizer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = xbeizer.1; path = src/xbeizer.1; sourceTree = "<group>"; };
 		21BD835A14E4B66400ACC45F /* libAppleWM.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAppleWM.7.dylib; path = /usr/X11/lib/libAppleWM.7.dylib; sourceTree = "<absolute>"; };
 		21BD835B14E4B66400ACC45F /* libAppleWM.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAppleWM.7.dylib; path = /usr/X11/lib/libAppleWM.7.dylib; sourceTree = "<absolute>"; };
 		21BD835C14E4B66400ACC45F /* libAppleWM.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAppleWM.7.dylib; path = /usr/X11/lib/libAppleWM.7.dylib; sourceTree = "<absolute>"; };
@@ -543,7 +543,7 @@
 		21BD845F14E4B66400ACC45F /* libXxf86vm.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXxf86vm.1.dylib; path = /usr/X11/lib/libXxf86vm.1.dylib; sourceTree = "<absolute>"; };
 		21BD846014E4B66400ACC45F /* libXxf86vm.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXxf86vm.1.dylib; path = /usr/X11/lib/libXxf86vm.1.dylib; sourceTree = "<absolute>"; };
 		21BD846114E4B66400ACC45F /* libXxf86vm.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXxf86vm.1.dylib; path = /usr/X11/lib/libXxf86vm.1.dylib; sourceTree = "<absolute>"; };
-		21BD856C14E4BD2700ACC45F /* xbeizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xbeizer.h; path = /Users/mactkg/work/xbeizer/xbeizer/xbeizer.h; sourceTree = "<absolute>"; };
+		21BD856C14E4BD2700ACC45F /* xbeizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xbeizer.h; path = /Users/mactkg/work/xbeizer/src/xbeizer.h; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -825,7 +825,7 @@
 			isa = PBXGroup;
 			children = (
 				21BD856B14E4B68800ACC45F /* lib */,
-				21BD6B7714E4B05900ACC45F /* xbeizer */,
+				21BD6B7714E4B05900ACC45F /* src */,
 				21BD6B7514E4B05900ACC45F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -838,13 +838,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21BD6B7714E4B05900ACC45F /* xbeizer */ = {
+		21BD6B7714E4B05900ACC45F /* src */ = {
 			isa = PBXGroup;
 			children = (
 				21BD856C14E4BD2700ACC45F /* xbeizer.h */,
 				21BD6B7814E4B05900ACC45F /* main.c */,
 				21BD6B7A14E4B05900ACC45F /* xbeizer.1 */,
 			);
+			name = src;
 			path = xbeizer;
 			sourceTree = "<group>";
 		};
